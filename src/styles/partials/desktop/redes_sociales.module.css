@@ -1,0 +1,20 @@
+.menu{
+  position: fixed;
+  z-index: 30;
+  width: 30px;
+  height: 140px;
+  bottom: 0px;
+  right: 0px;
+  padding-bottom: 20px;
+}
+.menu .items{
+  display: grid;
+  place-items: center;
+  gap: 15px;
+}
+.menu .items .item{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-font-secondary);
+}

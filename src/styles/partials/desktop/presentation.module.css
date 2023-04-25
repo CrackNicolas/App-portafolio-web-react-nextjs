@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 60px 20px 80px;
+}
+.description{
+    width: 70%;
+    color: var(--color-text-primary);
+}
+.perfil{
+    width: 30%;
+}
+.perfil img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.hello{
+    margin-bottom: 13px;
+}
+.name{
+    font-size: 57px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--color-text-secondary);
+}
+.specialist{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.message{
+    margin-bottom: 35px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.buttons a{
+    padding: 17px 25px;
+    text-decoration: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--color-font-secondary);
+    background-color: transparent;
+    color: var(--color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
