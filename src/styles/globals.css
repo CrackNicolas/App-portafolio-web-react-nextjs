@@ -1,6 +1,7 @@
 :root{
   --color-font-primary : #000000;
   --color-font-secondary : #083156;
+  --color-font-tertiary : rgb(38, 33, 33);
   --color-text-primary : #ffffff;
   --color-text-secondary : rgba(0, 255, 255, 0.742);
   --type-text-primary : ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono','Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro','Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
