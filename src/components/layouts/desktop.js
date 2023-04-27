@@ -6,10 +6,10 @@ import ComponentRedesSociales from "../partials/desktop/redes_sociales.js";
 
 export default function ComponentIsDeskatop(){
     return (
-        <main>
+        <section>
             <ComponentMenuLeft/>
             <ComponentPresentation/>
             <ComponentRedesSociales/>
-        </main>
+        </section>
     )
 }

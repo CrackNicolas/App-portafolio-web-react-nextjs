@@ -1,5 +1,7 @@
 export default function ComponentIsTablet(){
     return (
-        <h1 className="h1">Tablet</h1>
+        <section>
+            <h1>Tablet</h1>
+        </section>
     )
 }

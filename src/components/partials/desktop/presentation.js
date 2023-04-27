@@ -32,7 +32,7 @@ export default function ComponentPresentation(){
                 </div>
             </article>
             <article className={style.perfil}>
-                <img src="/images/perfil.jpg"></img>
+                <img src="/images/perfil.jpg"/>
             </article>
         </section>
     )

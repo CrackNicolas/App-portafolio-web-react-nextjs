@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 30;
   width: 30px;
-  height: 140px;
+  height: 120px;
   bottom: 0px;
   right: 0px;
   padding-bottom: 20px;
@@ -13,8 +13,24 @@
   gap: 15px;
 }
 .menu .items .item{
+  display: grid;
+  place-items: center;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: var(--color-font-secondary);
+}
+.menu .items .item ion-icon{
+  width: 15px;
+  height: 15px;
+  color: var(--color-text-primary);
+  transition-duration: 700ms;
+}
+.menu .items .item ion-icon:hover{
+  transition-timing-function: ease-in-out;
+  transform: translateY(-6px);
+  cursor: pointer;
+  color: var(--color-text-secondary);
+}
+.menu .items .line{
+  color: var(--color-text-primary);
 }
