@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 60px 20px 80px;
+}
+.container .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    color: var(--color-text-secondary);
+    border-bottom: 0.1px solid var(--color-text-secondary);
+}
+.container .description{
+    margin-bottom: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .description .item{
+    width: 320px;
+    height: auto;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0.1px solid var(--color-text-secondary);
+    padding: 20px;
+}
+.container .description .item .icon{
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-text-secondary);
+    margin: auto auto 15px auto;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.container .description .item .icon ion-icon{
+    width: 40px;
+    height: 40px;
+}
+.container .description .item h3{
+    font-size: 22px;
+    color: var(--color-text-primary);
+    margin-bottom: 15px;
+}
+.container .description .item p{
+    font-size: 15px;
+    color: var(--color-text-primary);
+}
