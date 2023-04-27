@@ -1,8 +1,8 @@
-import style from '../../../styles/partials/desktop/presentation.module.css';
+import style from '../../../styles/partials/desktop/inicio.module.css';
 
-export default function ComponentPresentation(){
+export default function ComponentInicio(){
     return (
-        <section className={style.container}>
+        <a id="inicio" className={style.container}>
             <article className={style.description}>
                 <h2 className={style.hello}>
                     Hola soy
@@ -19,14 +19,10 @@ export default function ComponentPresentation(){
                 <div className={style.buttons}>
                     <a href="">
                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                        <span>
-                            Contactame
-                        </span>
+                        <span>Contactame</span>
                     </a>
                     <a href="">
-                        <span>
-                            Descargar CV
-                        </span>
+                        <span>Descargar CV</span>
                         <ion-icon name="document-text-outline"></ion-icon>
                     </a>
                 </div>
@@ -34,6 +30,6 @@ export default function ComponentPresentation(){
             <article className={style.perfil}>
                 <img src="/images/perfil.jpg"/>
             </article>
-        </section>
+        </a>
     )
 }

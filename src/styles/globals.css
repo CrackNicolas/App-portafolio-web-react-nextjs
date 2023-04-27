@@ -14,3 +14,14 @@ body{
   background: var(--color-font-primary);
   font-family: var(--type-text-primary);
 }
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--color-text-secondary);
+  border-radius: 30px;
+}
