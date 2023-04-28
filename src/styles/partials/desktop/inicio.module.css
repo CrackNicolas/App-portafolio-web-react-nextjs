@@ -1,16 +1,13 @@
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
     padding: 100px 60px 20px 80px;
     margin-bottom: 140px;
 }
 .description{
-    width: 70%;
     color: var(--color-text-primary);
-}
-.perfil{
-    width: 30%;
 }
 .perfil img{
     width: 320px;

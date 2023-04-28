@@ -12,7 +12,7 @@ export default function ComponentServices(){
             <article className={style.description}>
                 <div className={style.item}>
                     <div className={style.icon}>
-                        
+                        <i class='bx bx-spreadsheet bx-lg'></i>
                     </div>
                     <h3>Diseño Web</h3>
                     <p>Realizo maquetados web basándome en resultados de diseñadores gráficos, implementando herramientas de diseño profesional como Photoshop, Ilustrator y Lightroom.</p>
@@ -26,7 +26,7 @@ export default function ComponentServices(){
                 </div>
                 <div className={style.item}>
                     <div className={style.icon}>
-                        <i class='bx bxs-data'></i>
+                        <i class='bx bxs-data bx-lg'></i>
                     </div>
                     <h3>Bases de datos</h3>
                     <p>Realizo implementaciones de bases de datos junto al desarrollo de aplicaciones en plataformas como MySQL, Microsoft SQL Server y MongoDB.</p>

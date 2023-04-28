@@ -14,31 +14,47 @@
 }
 .container .description{
     margin-bottom: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
 }
 .container .description .item{
-    width: 320px;
-    height: auto;
     background-color: transparent;
     border-radius: 5px;
     border: 0.1px solid var(--color-text-secondary);
     padding: 20px;
 }
+.container .description .item:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0.5px var(--color-text-secondary);
+}
+.container .description .item:hover .icon{
+    transition-timing-function: ease-in-out;
+    transform: translateY(-6px);
+    background-color: var(--color-font-primary);
+    border: 0.1px solid var(--color-text-secondary);
+}
+.container .description .item:hover .icon ion-icon, .container .description .item:hover .icon i{
+    color: var(--color-text-secondary);
+}
+.container .description .item:hover h3{
+    color: var(--color-text-secondary);
+}
 .container .description .item .icon{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     background-color: var(--color-text-secondary);
     margin: auto auto 15px auto;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
     display: grid;
     place-items: center;
+    border: 0.1px solid;
+    transition-duration: 700ms;
 }
 .container .description .item .icon ion-icon{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .container .description .item h3{
     font-size: 22px;

@@ -5,6 +5,7 @@
   --color-text-primary : #ffffff;
   --color-text-secondary : rgba(0, 255, 255, 0.742);
   --type-text-primary : ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono','Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro','Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --number-porcentaje : 0;
 }
 *{
   margin: 0px;
