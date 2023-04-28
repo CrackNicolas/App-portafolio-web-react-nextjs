@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import style from '../../../styles/partials/desktop/inicio.module.css';
 
 export default function ComponentInicio(){
@@ -28,7 +29,7 @@ export default function ComponentInicio(){
                 </div>
             </article>
             <article className={style.perfil}>
-                <img src="/images/perfil.jpg"/>
+                <img className="img" src="/images/perfil.jpg"/>
             </article>
         </a>
     )
