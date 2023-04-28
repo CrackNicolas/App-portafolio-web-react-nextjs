@@ -18,18 +18,18 @@ export default function ComponentInicio(){
                     Actualmente, estoy en la búsqueda de una empresa que me permita crecer como desarrollador y colaborar en proyectos desafiantes.
                 </p>
                 <div className={style.buttons}>
-                    <a href="">
+                    <a href="#contactar">
                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                         <span>Contactame</span>
                     </a>
                     <a href="">
-                        <span>Descargar CV</span>
                         <ion-icon name="document-text-outline"></ion-icon>
+                        <span>Descargar CV</span>
                     </a>
                 </div>
             </article>
             <article className={style.perfil}>
-                <img className="img" src="/images/perfil.jpg"/>
+                <img src="/images/perfil.jpg"/>
             </article>
         </a>
     )

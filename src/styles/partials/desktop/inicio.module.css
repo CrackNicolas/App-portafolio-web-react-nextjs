@@ -4,7 +4,8 @@
     align-items: center;
     gap: 60px;
     padding: 100px 100px 20px 80px;
-    margin-bottom: 140px;
+    margin: auto auto 140px auto;
+    max-width: 1700px;
 }
 .description{
     color: var(--color-text-primary);
