@@ -5,7 +5,7 @@ export default function ComponentSobreMi(){
         <a id="sobre-mi" className={style.container}>
             <h2 className={style.title}>
                 <span>
-                    Sobre mi
+                    Sobre mí
                 </span>
                 <ion-icon name="person-outline"></ion-icon>
             </h2>
@@ -18,12 +18,12 @@ export default function ComponentSobreMi(){
             <article className={style.habilidades}>
                 <div className={style.porcentaje} style={{"--number-porcentaje":100}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class="lab la-bootstrap bx-sm"></i>
+                        <i className={style.bootstrap+" bx bxl-bootstrap bx-md"}></i>
                         <h2>
                             100
                             <span>%</span>
@@ -33,12 +33,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class="lab la-mdb bx-sm"></i>
+                        <img src="https://img.icons8.com/fluency/48/null/mysql-logo.png"/>
                         <h2>
                             90
                             <span>%</span>
@@ -48,12 +48,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="logo-react"></ion-icon>
+                        <i className={style.react+" bx bxl-react bx-md"}></i>
                         <h2>
                             90
                             <span>%</span>
@@ -63,12 +63,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class="lab la-java bx-sm"></i>
+                        <img src="https://img.icons8.com/fluency/48/null/java-coffee-cup-logo.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -78,12 +78,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="logo-angular"></ion-icon>
+                        <img src="https://img.icons8.com/fluency/48/null/angularjs.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -93,12 +93,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class='bx bxl-typescript bx-sm'></i>
+                        <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -108,12 +108,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="logo-css3"></ion-icon>
+                        <img src="https://img.icons8.com/fluency/48/null/css3.png"/>
                         <h2>
                             90
                             <span>%</span>
@@ -123,12 +123,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="logo-html5"></ion-icon>
+                        <img src="https://img.icons8.com/fluency/48/null/html-5.png"/>
                         <h2>
                             90
                             <span>%</span>
@@ -138,12 +138,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class="lab la-php bx-sm"></i>
+                        <img src="https://img.icons8.com/fluency/48/null/php.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -153,12 +153,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="logo-npm"></ion-icon>
+                        <img src="/images/npm.png"/>
                         <h2>
                             90
                             <span>%</span>
@@ -168,12 +168,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class="lab la-node bx-sm"></i>
+                        <img src="https://img.icons8.com/fluency/48/null/node-js.png"/>
                         <h2>
                             90
                             <span>%</span>
@@ -183,12 +183,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="logo-javascript"></ion-icon>
+                        <img src="https://img.icons8.com/fluency/48/null/javascript.png"/>
                         <h2>
                             90
                             <span>%</span>
@@ -198,12 +198,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class='bx bxl-tailwind-css bx-sm'></i>
+                        <img src="https://img.icons8.com/fluency/48/null/tailwind_css.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -213,12 +213,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class='bx bxl-c-plus-plus bx-sm'></i>
+                        <img src="https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"/>
                         <h2>
                             70
                             <span>%</span>
@@ -228,12 +228,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class='bx bxl-mongodb bx-sm'></i>
+                        <i className={style.mongodb+" bx bxl-mongodb bx-md"}></i>
                         <h2>
                             70
                             <span>%</span>
@@ -243,12 +243,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class='bx bxl-jquery bx-sm'></i>
+                        <i className={style.jquery+" bx bxl-jquery bx-md"}></i>
                         <h2>
                             70
                             <span>%</span>
@@ -258,12 +258,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":60}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="infinite-outline"></ion-icon>
+                        <img src="https://img.icons8.com/fluency/48/null/arduino.png"/>
                         <h2>
                             60
                             <span>%</span>
@@ -273,12 +273,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <ion-icon name="logo-vercel"></ion-icon>
+                    <img src="/images/next.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -288,12 +288,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class="lab la-jira bx-sm"></i>
+                        <img className={style.jira} src="/images/jira.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -303,12 +303,12 @@ export default function ComponentSobreMi(){
                 </div>
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
-                    <svg>
+                    <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
                         <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
-                        <i class="lab la-trello bx-sm"></i>
+                        <i className={style.trello+" lab la-trello bx-md"}></i>
                         <h2>
                             80
                             <span>%</span>

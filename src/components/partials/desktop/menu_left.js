@@ -17,7 +17,7 @@ export default function ComponentMenuLeft(){
                         <ion-icon name="person-outline"></ion-icon>
                     </div>
                     <span className={style.load_text}>
-                        Sobre mi
+                        Sobre mí
                     </span>
                 </a>
                 <a href="#servicios" className={style.item}>
