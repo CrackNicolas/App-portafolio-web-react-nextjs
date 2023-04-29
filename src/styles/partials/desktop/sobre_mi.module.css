@@ -33,8 +33,10 @@
 .container .habilidades{
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
 }
 .porcentaje{
     position: relative;

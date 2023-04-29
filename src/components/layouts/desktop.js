@@ -11,18 +11,8 @@ import ComponentFooter from "../partials/desktop/footer.js";
 import ComponentRedesSociales from "../partials/desktop/redes_sociales.js";
 
 export default function ComponentIsDeskatop(){
-    let ubicacion_principal = window.pageYOffset;
-    let nav = document.querySelector(".main"); 
-
-    window.addEventListener('scroll', () => {
-        let ubicacion_actual = this.window.pageYOffset;
-        console.log("gatos:"+ ubicacion_actual);
-
-        ubicacion_principal = ubicacion_actual;
-    });
-    
     return (
-        <section className="main">
+        <section>
             <ComponentMenuLeft/>
             <ComponentInicio/>
             <ComponentSobreMi/>

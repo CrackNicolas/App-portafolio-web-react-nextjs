@@ -36,7 +36,7 @@ export default function Home() {
         <ClientOnly>
           {
             is_desktop? <ComponentIsDeskatop/> :
-            is_tablet?  <ComponentIsTablet/> :
+            is_tablet?  <ComponentIsDeskatop/> :
             is_mobile?  <ComponentIsMobile/> : ""
           }
           <Script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></Script>
