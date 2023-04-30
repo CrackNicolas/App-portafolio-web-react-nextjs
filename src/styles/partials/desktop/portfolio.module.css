@@ -35,12 +35,16 @@
     max-height: 235px;
     justify-self: center;
     border-radius: 3px;
+    overflow: hidden;
 }
 .container .proyect .card img{
     width: 375px;
     height: 235px;
     border-radius: 3px;
     cursor: pointer;
+}
+.container .proyect .card:hover img{
+    opacity: 0.9;
 }
 .container .proyect .card:hover .description{
     position: absolute;
@@ -179,9 +183,9 @@
 }
 @keyframes animate_proyecto{
     0%{
-        top: -220px;
+        top: 220px;
     }
     100%{
-        top: 0px;
+        top: 0;
     }
 }
