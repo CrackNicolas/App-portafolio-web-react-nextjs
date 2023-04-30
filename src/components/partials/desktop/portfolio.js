@@ -159,6 +159,26 @@ export default function ComponentPortfolio(){
                     </div>
                 </div>
             </article>
+            <article className={style.experiencia}>
+                <div>
+                    <h3>Cuál es mi experiencia profesional?</h3>
+                    <p>
+                        Trabajo como desarrollado web freelance hace 12 años, aplicando principalmente a proyectos con CMS.
+                        <br/><br/>
+                        He tenido la oportunidad de trabajar para empresas privadas y entidades públicas.
+                        <br/><br/>
+                        Actualmente, me encuentro en la búsqueda de un puesto laboral que me enriquezca como profesional, donde pueda colaborar en grandes proyectos con expertos en el área de desarrollo web.
+                    </p>
+                </div>
+                <div>
+                    <a href="#contactar">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>
+                            Contactame
+                        </span>
+                    </a>
+                </div>
+            </article>
         </a>
     )
 }
