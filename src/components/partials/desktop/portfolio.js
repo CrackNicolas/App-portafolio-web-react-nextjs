@@ -179,6 +179,36 @@ export default function ComponentPortfolio(){
                     </a>
                 </div>
             </article>
+            <article className={style.data}>
+                <div className={style.item}>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <p>
+                        <span>50+</span>
+                        <span>Proyectos terminados</span>
+                    </p>
+                </div>
+                <div className={style.item}>
+                    <ion-icon name="happy-outline"></ion-icon>
+                    <p>
+                        <span>43</span>
+                        <span>Clientes satisfechos</span>
+                    </p>
+                </div>
+                <div className={style.item}>
+                    <ion-icon name="flash-outline"></ion-icon>
+                    <p>
+                        <span>4</span>
+                        <span>Proyectos activos</span>
+                    </p>
+                </div>
+                <div className={style.item}>
+                    <ion-icon name="body-outline"></ion-icon>
+                    <p>
+                        <span>4</span>
+                        <span>Años de experiencia</span>
+                    </p>
+                </div>
+            </article>
         </a>
     )
 }
