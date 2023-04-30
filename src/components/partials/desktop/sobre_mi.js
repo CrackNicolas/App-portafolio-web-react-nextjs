@@ -16,7 +16,7 @@ export default function ComponentSobreMi(){
                 Mantenerme a la vanguardia es una de mis principales prioridades.
             </p>
             <article className={style.habilidades}>
-                <div className={style.porcentaje} style={{"--number-porcentaje":100}}>
+                <div className={style.porcentaje} style={{"--value-content-educacion":1}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>
@@ -31,7 +31,7 @@ export default function ComponentSobreMi(){
                         <p>Bootstrap</p>
                     </div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
+                <div className={style.porcentaje} style={{"--value-content-educacion":2}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
                         <circle cx="50" cy="50" r="50"></circle>

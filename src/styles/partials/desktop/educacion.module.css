@@ -14,3 +14,92 @@
     color: var(--color-text-secondary);
     border-bottom: 0.1px solid var(--color-text-secondary);
 }
+.container .subtitle{
+    color: var(--color-text-primary);
+    padding: 10px 0px 20px 0px;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.container .description{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.container .description .item{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 40px;
+}
+.container .description .item .data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    line-height: 30px;
+    text-align: end;
+}
+.container .description .item .data ion-icon{
+    width: 30px;
+    height: 30px;
+    color: var(--color-text-secondary);
+}
+.container .description .item .data h3{
+    font-weight: bold;
+    font-size: 27px;
+    letter-spacing: 1px;
+    color: var(--color-text-primary);
+}
+.container .description .item .data h5{
+    font-size: 17px;
+    opacity: 0.6;
+}
+.container .description .item .data h4{
+    margin-top: 7px;
+    color: var(--color-text-secondary);
+    font-size: 17px;
+}
+.container .description .item .details{
+    padding: 20px 50px;
+    border-left: 3px solid var(--color-text-secondary);
+    line-height: 35px;
+}
+.container .description .item .details::before{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-font-primary);
+    border-radius: 50%;
+    border: 3px solid var(--color-text-secondary);
+    top: 38%;
+    transform: translateX(-73.5px);
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    transition-duration: 0.8s;
+}
+.container .description .item:nth-child(1) .details::before{
+    content: "01";
+}
+.container .description .item:nth-child(2) .details::before{
+    content: "02";
+}
+.container .description .item .details p{
+    padding: 15px 20px;
+    border: 0.1px solid var(--color-text-secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0.0001px var(--color-text-primary);
+    transition-duration: 0.8s;
+}
+.container .description .item .details p:hover{
+    cursor: pointer;
+    background-color: var(--color-text-secondary);
+    color: var(--color-font-primary);
+    transition-timing-function: ease-in-out;
+    box-shadow: none;
+}
+.container .description .item .details:hover::before{
+    transition-timing-function: ease-in-out;
+    background-color: var(--color-text-secondary);
+    color: var(--color-font-primary);
+}
