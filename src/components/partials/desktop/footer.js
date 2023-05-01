@@ -8,7 +8,9 @@ export default function ComponentFooter(){
                     <ion-icon name="cafe-outline"></ion-icon>
                 </div>
                 <div className={style.details}>
-                    <h3>Alejo Beltran</h3>
+                    <a href="#inicio">
+                        Alejo Beltran
+                    </a>
                     <h1>beltrannicolasalejo@gmail.com</h1>
                 </div>
             </article>

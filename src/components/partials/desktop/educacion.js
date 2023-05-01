@@ -1,9 +1,13 @@
+import { useRef, useState } from 'react';
 import style from '../../../styles/partials/desktop/educacion.module.css';
 
 export default function ComponentEducacion(){
+    const [name_button,setName_button] = useState("Ver más");
+    const button = useRef();
 
     const view_description = () => {
-        
+        setName_button( (button.current.style.height == 'auto')? "Ver más" : "Ver menos");
+        button.current.style.height = (button.current.style.height == 'auto')? "520px" : "auto";
     }
 
     return (
@@ -15,7 +19,7 @@ export default function ComponentEducacion(){
                 <ion-icon name="text-outline"></ion-icon>
             </h2>
             <h3 className={style.subtitle}>Estudios realizados</h3>
-            <article className={style.description}>
+            <article className={style.description} ref={button}>
                 <div className={style.item}>
                     <div className={style.data}>
                         <ion-icon name="school-outline"></ion-icon>
@@ -104,8 +108,8 @@ export default function ComponentEducacion(){
                 </div>
             </article>
             <button onClick={() => view_description()}>
-                <span>Ver más</span>
-                <ion-icon name="chevron-down-outline"></ion-icon>
+                <span>{name_button}</span>
+                <ion-icon name={(name_button == "Ver más")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
             </button>
         </a>
     )

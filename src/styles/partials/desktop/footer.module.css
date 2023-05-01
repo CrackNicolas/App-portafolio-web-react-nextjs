@@ -5,20 +5,17 @@
 }
 .container .description{
     display: grid;
-    grid-template-columns: auto 3fr;
+    place-items: center;
+    flex-direction: column;
     border-top: 1px solid var(--color-text-secondary);
-    padding: 30px 0px;
+    padding: 50px 0px;
 }
 .container .description .icon{
     position: relative;
     background-color: transparent;
 }
-.container .description .details {
-    text-align: end;
-}
 .container .description .icon ion-icon{
     padding-top: 30px;
-    padding-left: 20px;
     width: 60px;
     height: 60px;
     color: var(--color-text-primary);
@@ -27,30 +24,31 @@
     position: absolute;
     content: '';
     border-radius: 50%;
-    background-color: var(--color-font-secondary);
+    background-color: gray;
+    opacity: 0.4;
     top: 21px;
 }
 .container .description .icon ion-icon::before{
-    width: 7px;
-    height: 7px;
-    left: 45%;
+    width: 6px;
+    height: 6px;
+    left: 30%;
     animation: animate_coffe 3s linear infinite;
 }
 .container .description .icon ion-icon::after{
-    width: 9px;
-    height: 9px;
-    left: 60%;
+    width: 8px;
+    height: 8px;
+    left: 45%;
     animation: animate_coffe 4s linear infinite;
 }
 @keyframes animate_coffe{
     0%{
         transform: translateY(0px);
-        box-shadow: 0 0 5px 1px var(--color-font-secondary), 
-                    0 0 10px 1px var(--color-font-secondary),
-                    0 0 20px 1px var(--color-font-secondary),
-                    0 0 25px 1px var(--color-font-secondary),
-                    0 0 30px 1px var(--color-font-secondary),
-                    0 0 35px 1px var(--color-font-secondary);
+        box-shadow: 0 0 5px 1px gray, 
+                    0 0 10px 1px gray,
+                    0 0 20px 1px gray,
+                    0 0 25px 1px gray,
+                    0 0 30px 1px gray,
+                    0 0 35px 1px gray;
     }
     50%{
         box-shadow: 0 0 5px 1px var(--color-font-secondary);
@@ -60,12 +58,26 @@
         transform: translateY(-35px);
     }
 }
-.container .description .details h3{
+.container .description .details{
+    text-align: center;
+    line-height: 45px;
+}
+.container .description .details a{
+    text-decoration: none;
     color: var(--color-text-primary);
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 27px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition-duration: 600ms;
+}
+.container .description .details a:hover{
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    color: var(--color-text-secondary);
 }
 .container .description .details h1{
-    color: var(--color-text-primary);
-    font-size: 35px;
+    color: var(--color-text-secondary);
+    font-size: 32px;
+    letter-spacing: 3px;
+    opacity: 0.8;
 }

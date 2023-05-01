@@ -14,6 +14,15 @@
     color: var(--color-text-secondary);
     border-bottom: 0.1px solid var(--color-text-secondary);
 }
+.container .title ion-icon{
+    transition-duration: 300ms;
+}
+.container .title ion-icon:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition-timing-function: ease-in-out;
+    transform: translateX(1.3px);
+}
 .container .subtitle{
     color: var(--color-text-primary);
     padding: 10px 0px 20px 0px;
@@ -23,7 +32,7 @@
 .container .description{
     display: grid;
     grid-template-columns: 1fr;
-    height: 520px;
+    height : 520px;
     overflow: hidden;
 }
 .container .description .item{
