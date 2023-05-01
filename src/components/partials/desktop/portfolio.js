@@ -163,7 +163,7 @@ export default function ComponentPortfolio(){
                 <div>
                     <h3>Cuál es mi experiencia profesional?</h3>
                     <p>
-                        Trabajo como desarrollado web freelance hace 12 años, aplicando principalmente a proyectos con CMS.
+                        Trabajo como desarrollado web freelance hace 4 años, aplicando a proyectos.
                         <br/><br/>
                         He tenido la oportunidad de trabajar para empresas privadas y entidades públicas.
                         <br/><br/>

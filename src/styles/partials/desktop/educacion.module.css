@@ -23,43 +23,50 @@
 .container .description{
     display: grid;
     grid-template-columns: 1fr;
+    height: 520px;
+    overflow: hidden;
 }
 .container .description .item{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 200px 3fr;
     grid-gap: 40px;
 }
 .container .description .item .data{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     line-height: 30px;
     text-align: end;
 }
+.container .description .item .data div{
+    width: 100%;
+}
 .container .description .item .data ion-icon{
-    width: 30px;
-    height: 30px;
+    min-width: 28px;
+    min-height: 28px;
+    max-width: 28px;
+    max-height: 28px;
     color: var(--color-text-secondary);
 }
 .container .description .item .data h3{
     font-weight: bold;
-    font-size: 27px;
+    font-size: 23px;
     letter-spacing: 1px;
     color: var(--color-text-primary);
 }
 .container .description .item .data h5{
-    font-size: 17px;
+    font-size: 13px;
     opacity: 0.6;
 }
 .container .description .item .data h4{
     margin-top: 7px;
     color: var(--color-text-secondary);
-    font-size: 17px;
+    font-size: 15px;
 }
 .container .description .item .details{
-    padding: 20px 50px;
+    padding: 20px 5px 10px 50px;
     border-left: 3px solid var(--color-text-secondary);
     line-height: 35px;
 }
@@ -84,6 +91,15 @@
 .container .description .item:nth-child(2) .details::before{
     content: "02";
 }
+.container .description .item:nth-child(3) .details::before{
+    content: "03";
+}
+.container .description .item:nth-child(4) .details::before{
+    content: "04";
+}
+.container .description .item:nth-child(5) .details::before{
+    content: "05";
+}
 .container .description .item .details p{
     padding: 15px 20px;
     border: 0.1px solid var(--color-text-secondary);
@@ -102,4 +118,25 @@
     transition-timing-function: ease-in-out;
     background-color: var(--color-text-secondary);
     color: var(--color-font-primary);
+}
+.container button{
+    outline: none;
+    border: 0.1px solid var(--color-text-secondary);
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+    transition-duration: 700ms;
+}
+.container button:hover{
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    color: var(--color-font-primary);
+    background-color: var(--color-text-secondary);
 }
