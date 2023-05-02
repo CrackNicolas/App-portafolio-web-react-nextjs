@@ -1,12 +1,17 @@
 import { useEffect } from 'react';
 import style from '../../../styles/partials/desktop/inicio.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function ComponentInicio(){
+    const {t} = useTranslation();
+
     return (
         <section id="inicio" className={style.container}>
             <article className={style.description}>
                 <h2 className={style.hello}>
-                    Hola soy
+                    {
+                        t('test')
+                    }
                 </h2>
                 <h1 className={style.name}>
                     Alejo Beltran
