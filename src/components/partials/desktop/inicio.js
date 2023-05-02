@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import style from '../../../styles/partials/desktop/inicio.module.css';
 import { useTranslation } from 'react-i18next';
 
@@ -10,7 +9,7 @@ export default function ComponentInicio(){
             <article className={style.description}>
                 <h2 className={style.hello}>
                     {
-                        t('test')
+                        t('inicio.txt_1')
                     }
                 </h2>
                 <h1 className={style.name}>
@@ -20,16 +19,26 @@ export default function ComponentInicio(){
                     Full Stack Development
                 </h4>
                 <p className={style.message}>
-                    Actualmente, estoy en la búsqueda de una empresa que me permita crecer como desarrollador y colaborar en proyectos desafiantes.
+                    {
+                        t('inicio.txt_2')
+                    }
                 </p>
                 <div className={style.buttons}>
                     <a href="#contactar">
                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                        <span>Contactame</span>
+                        <span>
+                            {
+                                t('inicio.txt_3')
+                            }
+                        </span>
                     </a>
                     <a href="">
                         <ion-icon name="document-text-outline"></ion-icon>
-                        <span>Descargar CV</span>
+                        <span>
+                            {
+                                t('inicio.txt_4')
+                            }
+                        </span>
                     </a>
                 </div>
             </article>

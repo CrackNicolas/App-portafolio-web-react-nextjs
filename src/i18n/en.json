@@ -1,3 +1,8 @@
 {
-    "test" : "Test"
+    "inicio" : {
+        "txt_1" : "Hi I am",
+        "txt_2" : "Currently, I am looking for a company that allows me to grow as a developer and collaborate on challenging projects.",
+        "txt_3" : "Contact me",
+        "txt_4" : "Download CV"
+    }
 }
