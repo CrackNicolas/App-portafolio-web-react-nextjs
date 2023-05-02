@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import style from '../../../styles/partials/desktop/portfolio.module.css';
 
 export default function ComponentPortfolio(){
@@ -171,12 +172,12 @@ export default function ComponentPortfolio(){
                     </p>
                 </div>
                 <div>
-                    <a href="#contactar">
+                    <Link to="contactar" spy={true} smooth={true} offset={0} duration={500}>
                         <ion-icon name="mail-outline"></ion-icon>
                         <span>
                             Contactame
                         </span>
-                    </a>
+                    </Link>
                 </div>
             </article>
             <article className={style.data}>

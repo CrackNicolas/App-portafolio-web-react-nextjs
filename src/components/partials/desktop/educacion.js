@@ -34,7 +34,7 @@ export default function ComponentEducacion(){
                             Carrera Ingeniería en Sistemas de Información, 
                             Estudiante avanzado y becario, en esta carrera logré fortificar las bases de la programación implementando soluciones tecnológicas en casos prácticos reales con distintos lenguajes de programación, diversas metodologías y técnicas.
                             <br/>
-                            Tecnologías aplicadas: JavaScript, HTML, CSS, Bootstrap, Tailwind, C/C++, Java, Haskell, Prolog, MySql, Arduino, Git, GitHub. Linux, Node.js, npm, Unit Testing con Jest, IDE Apache NetBeans 8.1/14.0, Dev c++, editor de codigo Visual Stude Code.
+                            Tecnologías aplicadas: JavaScript, HTML, CSS, Bootstrap, Tailwind, C/C++, Java, Haskell, Prolog, MySql, Arduino, Git, GitHub. Linux, Node.js, npm, Unit Testing con Jest, IDE Apache NetBeans 8.1/14.0, Dev c++, editor de codigo Visual Stude Code, Jira Software, Trello.
                         </p>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export default function ComponentEducacion(){
                         <p>
                             En este curso desarrollé todos los conocimientos que debe tener un Full Stack Developer para llevar a cabo cualquier aplicación sin problemas.
                             <br/>
-                            Tecnologías aplicadas: Angular, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Java con Spring Boot, POO, MySql, Integración continua y entrega continua (CI/CD), Docker, Clever cloud, Hostings como Render, Firebase, Heroku.
+                            Tecnologías aplicadas: Angular, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Java con Spring Boot, POO, MySql, Integración continua y entrega continua (CI/CD), Docker, Clever cloud, Hostings como Render, Firebase, Heroku, Metodología Scrum.
                         </p>    
                     </div>
                 </div>
@@ -60,7 +60,7 @@ export default function ComponentEducacion(){
                         <ion-icon name="logo-react"></ion-icon>
                         <div>
                             <h3>React.js</h3>
-                            <h4>Coder House</h4>
+                            <h4>UTN</h4>
                             <h5>Junio 2022 - Agosto 2022</h5>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ export default function ComponentEducacion(){
                     </div>
                     <div className={style.details}>
                         <p>
-                            En este proyecto desarrollé soluciones en JavaScript fortaleciendo los fundamentos de este lenguaje de programación, principalmente implemente: Sintaxis & Variables, Ciclos/Iteraciones, Funciones, Objetos, Arrays, DOM, Eventos, Storage & JSON, Operadores Avanzados, Promesas/Async, AJAX y Fetch, Axios, Node.js.
+                            En este proyecto desarrollé soluciones en JavaScript fortaleciendo los fundamentos de este lenguaje de programación, principalmente implemente: Sintaxis & Variables, Ciclos/Iteraciones, Funciones, Objetos, Arrays, DOM, Eventos, Storage & JSON, Operadores Avanzados, Promesas/Async, AJAX y Fetch, Axios, Node.js, Metodología Scrum.
                             <br/>
                             Tecnologías aplicadas: Framework Express.js, Motores de plantillas EJS & Handlerbars, Implementacion de Cookies, POO, Unit Testing Jest, Bootstrap, Tailwind, MySql, Hosting Railway.
                         </p>

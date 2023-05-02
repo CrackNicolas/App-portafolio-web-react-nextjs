@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 0px;
+    letter-spacing: 1px;
     color: var(--color-text-secondary);
     border-bottom: 0.1px solid var(--color-text-secondary);
 }
@@ -61,7 +62,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--color-text-primary);
+    background-color: var(--color-text-secondary);
     animation: animate_proyecto 1s linear;
 }
 .container .proyect .card .description{
@@ -86,11 +87,13 @@
     color: var(--color-font-primary);
     border-radius: 50%;
     transition-duration: 700ms;
+    border: 0.1px solid transparent;
+    padding: 5px;
 }
 .container .proyect .card .description p ion-icon:hover{
     transition-timing-function: ease-in-out;
-    transform: translateY(-1.5px);
-    color: var(--color-text-secondary);
+    border: 0.1px solid var(--color-font-primary);
+    box-shadow: 0 0 8px 1px var(--color-font-primary);
 }
 .container .experiencia{
     display: grid;
@@ -179,8 +182,10 @@
 }
 .container .data .item span:nth-child(2){
     font-size: 17px;
-    font-weight: 700;
     letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    opacity: 0.7;
 }
 @keyframes animate_button{
     0%{
