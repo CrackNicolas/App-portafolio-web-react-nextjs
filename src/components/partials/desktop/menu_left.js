@@ -1,57 +1,58 @@
+import {Link} from 'react-scroll';
 import style from '../../../styles/partials/desktop/menu_left.module.css'
 
 export default function ComponentMenuLeft(){
     return (
         <section className={style.menu}>
             <article className={style.items}>
-                <a href="#inicio" className={style.item}>
+                <Link to="inicio" spy={true} smooth={true} offset={0} duration={500} className={style.item}>
                     <div className={style.load_icon}>
                         <ion-icon name="easel-outline"></ion-icon>
                     </div>
                     <span className={style.load_text}>
                         Inicio
                     </span>
-                </a>
-                <a href="#sobre-mi" className={style.item}>
+                </Link>
+                <Link to="sobre-mi" spy={true} smooth={true} offset={0} duration={500} className={style.item}>
                     <div className={style.load_icon}>
                         <ion-icon name="person-outline"></ion-icon>
                     </div>
                     <span className={style.load_text}>
                         Sobre mí
                     </span>
-                </a>
-                <a href="#servicios" className={style.item}>
+                </Link>
+                <Link to="servicios" spy={true} smooth={true} offset={0} duration={500} className={style.item}>
                     <div className={style.load_icon}>
                         <ion-icon name="book-outline"></ion-icon>
                     </div>
                     <span className={style.load_text}>
                         Servicios
                     </span>
-                </a>
-                <a href="#portfolio" className={style.item}>
+                </Link>
+                <Link to="portfolio" spy={true} smooth={true} offset={0} duration={500} className={style.item}>
                     <div className={style.load_icon}>
                         <ion-icon name="briefcase-outline"></ion-icon>
                     </div>
                     <span className={style.load_text}>
                         Portfolio
                     </span>
-                </a>
-                <a href="#educacion" className={style.item}>
+                </Link>
+                <Link to="educacion" spy={true} smooth={true} offset={0} duration={500} className={style.item}>
                     <div className={style.load_icon}>
                         <ion-icon name="text-outline"></ion-icon>
                     </div>
                     <span className={style.load_text}>
                         Educación
                     </span>
-                </a>
-                <a href="#contactar" className={style.item}>
+                </Link>
+                <Link to="contactar" spy={true} smooth={true} offset={0} duration={500} className={style.item}>
                     <div className={style.load_icon}>
                         <ion-icon name="mail-outline"></ion-icon>
                     </div>
                     <span className={style.load_text}>
                         Contactar
                     </span>
-                </a>
+                </Link>
             </article>
         </section>
     )

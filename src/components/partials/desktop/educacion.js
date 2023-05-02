@@ -11,7 +11,7 @@ export default function ComponentEducacion(){
     }
 
     return (
-        <a id="educacion" className={style.container}>
+        <section id="educacion" className={style.container}>
             <h2 className={style.title}>
                 <span>
                     Educación
@@ -111,6 +111,6 @@ export default function ComponentEducacion(){
                 <span>{name_button}</span>
                 <ion-icon name={(name_button == "Ver más")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
             </button>
-        </a>
+        </section>
     )
 }

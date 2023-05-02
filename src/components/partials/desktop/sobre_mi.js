@@ -2,7 +2,7 @@ import style from '../../../styles/partials/desktop/sobre_mi.module.css';
 
 export default function ComponentSobreMi(){
     return (
-        <a id="sobre-mi" className={style.container}>
+        <section id="sobre-mi" className={style.container}>
             <h2 className={style.title}>
                 <span>
                     Sobre mí
@@ -317,6 +317,6 @@ export default function ComponentSobreMi(){
                     </div>
                 </div>
             </article>
-        </a>
+        </section>
     )
 }

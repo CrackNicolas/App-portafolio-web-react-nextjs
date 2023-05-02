@@ -2,7 +2,7 @@ import style from '../../../styles/partials/desktop/portfolio.module.css';
 
 export default function ComponentPortfolio(){
     return (
-        <a id="portfolio" className={style.container}>
+        <section id="portfolio" className={style.container}>
             <h2 className={style.title}>
                 <span>
                     Portfolio
@@ -209,6 +209,6 @@ export default function ComponentPortfolio(){
                     </p>
                 </div>
             </article>
-        </a>
+        </section>
     )
 }

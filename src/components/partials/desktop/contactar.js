@@ -2,7 +2,7 @@ import style from '../../../styles/partials/desktop/contactar.module.css';
 
 export default function ComponentContactar(){
     return (
-        <a id="contactar" className={style.container}>
+        <section id="contactar" className={style.container}>
             <h2 className={style.title}>
                 <span>
                     Contactame
@@ -24,6 +24,6 @@ export default function ComponentContactar(){
                     </button>
                 </form>
             </article>
-        </a>
+        </section>
     )
 }

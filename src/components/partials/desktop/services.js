@@ -2,7 +2,7 @@ import style from '../../../styles/partials/desktop/services.module.css';
 
 export default function ComponentServices(){
     return (
-        <a id="servicios" className={style.container}>
+        <section id="servicios" className={style.container}>
             <h2 className={style.title}>
                 <span>
                     Servicios
@@ -33,6 +33,6 @@ export default function ComponentServices(){
                     <p>Realizo implementaciones de bases de datos junto al desarrollo de aplicaciones en plataformas como MySQL, Microsoft SQL Server y MongoDB.</p>
                 </div>
             </article>
-        </a>
+        </section>
     )
 }

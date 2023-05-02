@@ -3,7 +3,7 @@ import style from '../../../styles/partials/desktop/inicio.module.css';
 
 export default function ComponentInicio(){
     return (
-        <a id="inicio" className={style.container}>
+        <section id="inicio" className={style.container}>
             <article className={style.description}>
                 <h2 className={style.hello}>
                     Hola soy
@@ -31,6 +31,6 @@ export default function ComponentInicio(){
             <article className={style.perfil}>
                 <img src="/images/perfil.jpg"/>
             </article>
-        </a>
+        </section>
     )
 }
