@@ -1,25 +1,37 @@
 import { Link } from 'react-scroll';
 import style from '../../../styles/partials/desktop/portfolio.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function ComponentPortfolio(){
+    const {t} = useTranslation();
+    
     return (
         <section id="portfolio" className={style.container}>
             <h2 className={style.title}>
                 <span>
-                    Portfolio
+                    {
+                        t('portfolio.title')
+                    }
                 </span>
                 <ion-icon name="briefcase-outline"></ion-icon>
             </h2>
-            <h3 className={style.subtitle}>Ultimos proyectos</h3>
+            <h3 className={style.subtitle}>
+                {
+                    t('portfolio.subtitle')
+                }
+            </h3>
             <article className={style.proyect}>
                 <div className={style.card}>
                     <img src="/images/youtube.png"/>
                     <div className={style.description}>
                         <p>
-                            App YouTube, realice esta aplicacion solo como una replica de la aplicacion oficial sin ningun tipo de intencion de violar sus politicas de privacidad. Estado de la aplicacion (Periodo de pruebas) aplicacion completa en un 15%, cada tanto continuo trabajando en ella y planeo completarla en un 100%.
+                            {
+                                t('portfolio.proyects.p_1.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            React, JavaScript, HTML5, CSS3
+                            {
+                                t('portfolio.proyects.p_1.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/My_youtube">
@@ -35,10 +47,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/pinterest.png"/>
                     <div className={style.description}>
                         <p>
-                            App web en donde se puede realizar la gestion de imagenes al estilo pinterest.
+                            {
+                                t('portfolio.proyects.p_2.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            JavaScript, Framework Express.js, MongoDB, Motor de plantillas EJS, Framework Bootstrap, CSS3, HTML5
+                            {
+                                t('portfolio.proyects.p_2.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-pinterest-express.js">
@@ -51,10 +66,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/quizz.png"/>
                     <div className={style.description}>
                         <p>
-                            App web de administracion de usuarios, con seguridad para evitar ataques como XSS, CSRF, SQL INJECTION, CODE INJECTION, BRUTE FORCE ROBOTS tambien incluye SSL y el archivo .htaccess
+                            {
+                                t('portfolio.proyects.p_3.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            PHP implementacion de PDO, Framework Bootstrap, HTML5, CSS3, DB MySql, DB deploy con Clever cloud
+                            {
+                                t('portfolio.proyects.p_3.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-stack-usuarios-php">
@@ -67,10 +85,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/QA.png"/>
                     <div className={style.description}>
                         <p>
-                            App web, fabrica de calzados con lineas de produccion y ordenes de produccion con modelo y color, estas estan supervisadas por 2 operadores, que realizan el control de calidad de los calzados.
+                            {
+                                t('portfolio.proyects.p_4.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            JavaScript, TypeScript, Framework Express.js, Mysql, CSS3, HTML5, Framework Tailwind, Motor de plantillas HandleBards, Testing con jest
+                            {
+                                t('portfolio.proyects.p_4.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-control-de-calidad-calzados-express.js">
@@ -83,10 +104,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/Parser.png"/>
                     <div className={style.description}>
                         <p>
-                            App desktop, GUI que cuenta con un analizador lexico y sintactico y una seccion donde podemos ingresar consultas sql, luego de ejecutar el sistema nos devolvera el analisis del analizador lexico y sintactico con un mansaje de validacion de nuestra consulta.
+                            {
+                                t('portfolio.proyects.p_5.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            Java, IDE NetBeans, Librerias java-cup.jar, java-cup-11a.jar, Jflex.jar
+                            {
+                                t('portfolio.proyects.p_5.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-parser-mysql-java">
@@ -99,10 +123,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/Clasical_model.png"/>
                     <div className={style.description}>
                         <p>
-                            App desktop, consiste en la administracion de una empresa que cuenta con Empleados, Usuarios, Oficinas, Productos, Pedidos, Pagos, Clientes, Linea de productos, Detalles de pedidos
+                            {
+                                t('portfolio.proyects.p_6.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            Java, IDE NetBeans 8.2, MySql, Librerias mysql-connector-java-8.0.21.jar, jcalendar-1.3.2.jar, swingx-1.6.2.jar, NefAnimation_V2.1_jdk17.jar
+                            {
+                                t('portfolio.proyects.p_6.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-clasicalmodels-java">
@@ -115,10 +142,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/Juego_pong.png"/>
                     <div className={style.description}>
                         <p>
-                            App, consiste en un juego donde tenemos 7 leds, al iniciar los leds comienzan en color azul al llegar al extremo de la tira led espera 1seg a que el jugador presione el boton para continuar, en caso de pasado el tiempo sin presionar el boton, el juego nos muestra una led de color rojo y vuelve a iniciar el juego.
+                            {
+                                t('portfolio.proyects.p_7.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            Arduino, Tinkercat
+                            {
+                                t('portfolio.proyects.p_7.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-juegopong-arduino">
@@ -131,10 +161,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/Analizador_lexico.png"/>
                     <div className={style.description}>
                         <p>
-                            Consiste en dos Aplicaciones que realizan un analisis lexico de 2 formas distintas, una es usando matrizes y la otra es usando codigo logico.
+                            {
+                                t('portfolio.proyects.p_8.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            C, C++
+                            {
+                                t('portfolio.proyects.p_8.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-analizadoreslexicos-c">
@@ -147,10 +180,13 @@ export default function ComponentPortfolio(){
                     <img src="/images/editorial.png"/>
                     <div className={style.description}>
                         <p>
-                            App desktop, consiste en la administracion de una editorial de libros, que ademas implementa la validacion y uso de ISBNS.
+                            {
+                                t('portfolio.proyects.p_9.data')
+                            }
                             <br/>
-                            Tecnologias utilizadas
-                            C, C++
+                            {
+                                t('portfolio.proyects.p_9.tecnologias')
+                            }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-editorialdelibros-c">
@@ -162,20 +198,32 @@ export default function ComponentPortfolio(){
             </article>
             <article className={style.experiencia}>
                 <div>
-                    <h3>Cuál es mi experiencia profesional?</h3>
+                    <h3>
+                        {
+                            t('portfolio.experience.title')
+                        }
+                    </h3>
                     <p>
-                        Trabajo como desarrollado web freelance hace 4 años, aplicando a proyectos.
+                        {
+                            t('portfolio.experience.data.txt_1')
+                        }
                         <br/><br/>
-                        He tenido la oportunidad de trabajar para empresas privadas y entidades públicas.
+                        {
+                            t('portfolio.experience.data.txt_2')
+                        }
                         <br/><br/>
-                        Actualmente, me encuentro en la búsqueda de un puesto laboral que me enriquezca como profesional, donde pueda colaborar en grandes proyectos con expertos en el área de desarrollo web.
+                        {
+                            t('portfolio.experience.data.txt_3')
+                        }
                     </p>
                 </div>
                 <div>
                     <Link to="contactar" spy={true} smooth={true} offset={0} duration={500}>
                         <ion-icon name="mail-outline"></ion-icon>
                         <span>
-                            Contactame
+                            {
+                                t('inicio.txt_3')
+                            }
                         </span>
                     </Link>
                 </div>
@@ -185,28 +233,44 @@ export default function ComponentPortfolio(){
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                     <p>
                         <span>50+</span>
-                        <span>Proyectos terminados</span>
+                        <span>
+                            {
+                                t('portfolio.additional.txt_1')
+                            }
+                        </span>
                     </p>
                 </div>
                 <div className={style.item}>
                     <ion-icon name="happy-outline"></ion-icon>
                     <p>
                         <span>43</span>
-                        <span>Clientes satisfechos</span>
+                        <span>
+                            {
+                                t('portfolio.additional.txt_2')
+                            }
+                        </span>
                     </p>
                 </div>
                 <div className={style.item}>
                     <ion-icon name="flash-outline"></ion-icon>
                     <p>
                         <span>4</span>
-                        <span>Proyectos activos</span>
+                        <span>
+                            {
+                                t('portfolio.additional.txt_3')
+                            }
+                        </span>
                     </p>
                 </div>
                 <div className={style.item}>
                     <ion-icon name="body-outline"></ion-icon>
                     <p>
                         <span>4</span>
-                        <span>Años de experiencia</span>
+                        <span>
+                            {
+                                t('portfolio.additional.txt_4')
+                            }
+                        </span>
                     </p>
                 </div>
             </article>

@@ -1,19 +1,32 @@
+import { useTranslation } from 'react-i18next';
 import style from '../../../styles/partials/desktop/sobre_mi.module.css';
 
 export default function ComponentSobreMi(){
+    const {t} = useTranslation();
+
     return (
         <section id="sobre-mi" className={style.container}>
             <h2 className={style.title}>
                 <span>
-                    Sobre mí
+                    {
+                        t('sobre-mi.title')
+                    }
                 </span>
                 <ion-icon name="person-outline"></ion-icon>
             </h2>
-            <h4 className={style.contratan}>¿Por qué me contratan?</h4>
+            <h4 className={style.contratan}>
+                {
+                    t('sobre-mi.subtitle')
+                }
+            </h4>
             <p className={style.description}>
-                Soy un profesional dedicado a la excelencia de mis proyectos, recomendando tecnologías y estrategias para cada caso.
+                {
+                    t('sobre-mi.description.line_1')
+                }
                 <br/>
-                Mantenerme a la vanguardia es una de mis principales prioridades.
+                {
+                    t('sobre-mi.description.line_2')
+                }
             </p>
             <article className={style.habilidades}>
                 <div className={style.porcentaje} style={{"--value-content-educacion":1}}>

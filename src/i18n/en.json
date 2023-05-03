@@ -1,8 +1,157 @@
 {
+    "menu" : {
+        "i_1" : "Start",
+        "i_2" : "About me",
+        "i_3" : "Services",
+        "i_4" : "Portfolio",
+        "i_5" : "Educatión",
+        "i_6" : "Contact",
+        "i_7" : "Lenguage"
+    },
     "inicio" : {
         "txt_1" : "Hi I am",
         "txt_2" : "Currently, I am looking for a company that allows me to grow as a developer and collaborate on challenging projects.",
         "txt_3" : "Contact me",
         "txt_4" : "Download CV"
+    },
+    "sobre-mi" : {
+        "title" : "About me",
+        "subtitle" : "Why do they hire me?",
+        "description" : {
+            "line_1" : "I am a professional dedicated to the excellence of my projects, recommending technologies and strategies for each case.",
+            "line_2" : "Staying ahead is one of my top priorities."
+        }
+    },
+    "servicios" : {
+        "title" : "Services",
+        "subtitle" : "Services I offer",
+        "item_1" : {
+            "txt_1" : "Web design",
+            "txt_2" : "Make web layouts based on results from graphic designers, implementing professional design tools such as Photoshop, Illustrator and Lightroom."
+        },
+        "item_2" : {
+            "txt_1" : "Specific Programming",
+            "txt_2" : "Personalized solutions for more complex and specific needs."
+        },
+        "item_3" : {
+            "txt_1" : "Databases",
+            "txt_2" : "I carry out database implementations together with the development of applications on platforms such as MySQL, Microsoft SQL Server and MongoDB."
+        }
+    },
+    "portfolio" : {
+        "title" : "Portfolio",
+        "subtitle" : "Last projects",
+        "proyects" : {
+            "p_1" : {
+                "data" : "App YouTube, make this application only as a replica of the official application without any intention of violating their privacy policies. Application Status (Trial Period) Application 15% complete, from time to time I continue to work on it and plan to complete it 100%.",
+                "tecnologias" : "Technologies used React, JavaScript, HTML5, CSS3."
+            },
+            "p_2" : {
+                "data" : "Web app where you can manage images in the Pinterest style.",
+                "tecnologias" : "Technologies used JavaScript, Express.js Framework, MongoDB, EJS Template Engine, Bootstrap Framework, CSS3, HTML5."
+            },
+            "p_3" : {
+                "data" : "User administration web app, with security to avoid attacks like XSS, CSRF, SQL INJECTION, CODE INJECTION, BRUTE FORCE ROBOTS also includes SSL and .htaccess file.",
+                "tecnologias" : "Technologies used PHP PDO implementation, Bootstrap Framework, HTML5, CSS3, DB MySql, DB deploy with Clever cloud."
+            },
+            "p_4" : {
+                "data" : "Web app, shoe factory with production lines and production orders with model and color, these are supervised by 2 operators, who carry out the quality control of the shoes.",
+                "tecnologias" : "Technologies used JavaScript, TypeScript, Express.js Framework, Mysql, CSS3, HTML5, Tailwind Framework, HandleBards template engine, Testing with jest."
+            },
+            "p_5" : {
+                "data" : "Desktop app, GUI that has a lexical and syntactic analyzer and a section where we can enter sql queries, after executing the system it will return the analysis of the lexical and syntactic analyzer with a message validating our query.",
+                "tecnologias" : "Technologies used Java, IDE NetBeans, Libraries java-cup.jar, java-cup-11a.jar, Jflex.jar."
+            },
+            "p_6" : {
+                "data" : "App desktop, consists of the administration of a company that has Employees, Users, Offices, Products, Orders, Payments, Customers, Product Line, Order Details.",
+                "tecnologias" : "Technologies used Java, IDE NetBeans 8.2, MySql, Libraries mysql-connector-java-8.0.21.jar, jcalendar-1.3.2.jar, swingx-1.6.2.jar, NefAnimation_V2.1_jdk17.jar."
+            },
+            "p_7" : {
+                "data" : "App, consists of a game where we have 7 leds, when starting the leds they start in blue when they reach the end of the led strip, wait 1 sec for the player to press the button to continue, if the time has elapsed without pressing the button, the game shows us a red led and starts the game again.",
+                "tecnologias" : "Technologies used Arduino, Tinkercad."
+            },
+            "p_8" : {
+                "data" : "It consists of two Applications that perform a lexical analysis in 2 different ways, one is using arrays and the other is using logical code.",
+                "tecnologias" : "Technologies used C, C++."
+            },
+            "p_9" : {
+                "data" : "App desktop, consists of the administration of a book publisher, which also implements the validation and use of ISBNS.",
+                "tecnologias" : "Technologies used C, C++."
+            }
+        },
+        "experience" : {
+            "title" : "What is my professional experience?",
+            "data" : {
+                "txt_1" : "I have been working as a freelance web developer for 4 years, applying to projects.",
+                "txt_2" : "I have had the opportunity to work for private companies and public entities.",
+                "txt_3" : "Currently, I am looking for a job that will enrich me as a professional, where I can collaborate on large projects with experts in the field of web development."
+            }
+        },
+        "additional" : {
+            "txt_1" : "Finished projects",
+            "txt_2" : "Satisfied customers",
+            "txt_3" : "active projects",
+            "txt_4" : "Years of experience"
+        }
+    },
+    "education" : {
+        "title" : "Education",
+        "subtitle" : "Applied studies",
+        "data" : {
+            "item_1" : {
+                "title" : "ISI",
+                "subtitle" : "UTN",
+                "status" : "In progress...",
+                "description" : {
+                    "txt_1" : "Information Systems Engineering major, Advanced student and scholarship holder, in this career I managed to fortify the foundations of programming by implementing technological solutions in real practical cases with different programming languages, various methodologies and techniques.",
+                    "txt_2" : "Applied technologies: JavaScript, HTML, CSS, Bootstrap, Tailwind, C/C++, Java, Haskell, Prolog, MySql, Arduino, Git, GitHub. Linux, Node.js, npm, Unit Testing with Jest, Apache NetBeans IDE 8.1/14.0, Dev c++, Visual Stude Code editor, Jira Software, Trello."
+                }
+            },
+            "item_2" : {
+                "title" : "iprogram",
+                "subtitle" : "Arg.Program",
+                "status" : "April 2021 - February 2023",
+                "description" : {
+                    "txt_1" : "In this course I developed all the knowledge that a Full Stack Developer must have to carry out any application without problems.",
+                    "txt_2" : "Applied technologies: Angular, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Java with Spring Boot, OOP, MySql, Continuous Integration and Continuous Delivery (CI/CD), Docker, Clever cloud, Hostings such as Render, Firebase, Heroku, Scrum Methodology."
+                }
+            },
+            "item_3" : {
+                "title" : "React.js",
+                "subtitle" : "UTN",
+                "status" : "June 2022 - August 2022",
+                "description" : {
+                    "txt_1" : "In this course I developed solutions in React.js, this being the currently most used JavaScript framework that allows us to develop frontend web applications (SPA, single page applications), mainly implementing: variables, jsx, views, components, states, hooks, control structures, lists and much more.",
+                    "txt_2" : "Applied technologies: JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Tailwind, MongoDB, Firebase."
+                }
+            },
+            "item_4" : {
+                "title" : "Next.js",
+                "subtitle" : "midulive",
+                "status" : "January 2023 - February 2023",
+                "description" : {
+                    "txt_1" : "In this course I developed solutions in Next.js using everything I learned from React.js, one of the projects I did with this React.js framework was this portfolio.",
+                    "txt_2" : "Applied technologies: JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Tailwind, MongoDB, Firebase."
+                }
+            },
+            "item_5" : {
+                "title" : "JavaScript",
+                "subtitle" : "UTN",
+                "status" : "March 2022 - May 2022",
+                "description" : {
+                    "txt_1" : "In this project I developed JavaScript solutions strengthening the fundamentals of this programming language, mainly implementing: Syntax & Variables, Loops/Iterations, Functions, Objects, Arrays, DOM, Events, Storage & JSON, Advanced Operators, Promises/Async, AJAX and Fetch, Axios, Node.js, Scrum Methodology.",
+                    "txt_2" : "Applied technologies: Express.js Framework, EJS & Handlerbars Template Engines, Cookie Implementation, OOP, Unit Testing Jest, Bootstrap, Tailwind, MySql, Hosting Railway."
+                }
+            }
+        } 
+    },
+    "contact" : {
+        "subtitle" : "Contact Form",
+        "inputs" : {
+            "i_1" : "Name...",
+            "i_2" : "Last name...",
+            "i_3" : "Mail...",
+            "i_4" : "Consultation..."
+        }       
     }
 }

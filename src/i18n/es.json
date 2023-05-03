@@ -1,8 +1,157 @@
 {
+    "menu" : {
+        "i_1" : "Inicio",
+        "i_2" : "Sobre mí",
+        "i_3" : "Servicios",
+        "i_4" : "Portfolio",
+        "i_5" : "Educación",
+        "i_6" : "Contactar",
+        "i_7" : "Idioma"
+    },
     "inicio" : {
         "txt_1" : "Hola soy",
         "txt_2" : "Actualmente, estoy en la búsqueda de una empresa que me permita crecer como desarrollador y colaborar en proyectos desafiantes.",
         "txt_3" : "Contactame",
         "txt_4" : "Descargar CV"
+    },
+    "sobre-mi" : {
+        "title" : "Sobre mí",
+        "subtitle" : "¿Por qué me contratan?",
+        "description" : {
+            "line_1" : "Soy un profesional dedicado a la excelencia de mis proyectos, recomendando tecnologías y estrategias para cada caso.",
+            "line_2" : "Mantenerme a la vanguardia es una de mis principales prioridades."
+        }
+    },
+    "servicios" : {
+        "title" : "Servicios",
+        "subtitle" : "Servicios que ofrezco",
+        "item_1" : {
+            "txt_1" : "Diseño Web",
+            "txt_2" : "Realizo maquetados web basándome en resultados de diseñadores gráficos, implementando herramientas de diseño profesional como Photoshop, Ilustrator y Lightroom."
+        },
+        "item_2" : {
+            "txt_1" : "Programacion Especifica",
+            "txt_2" : "Soluciones personalizadas para necesidades más complejas y puntuales."
+        },
+        "item_3" : {
+            "txt_1" : "Bases de datos",
+            "txt_2" : "Realizo implementaciones de bases de datos junto al desarrollo de aplicaciones en plataformas como MySQL, Microsoft SQL Server y MongoDB."
+        }
+    },
+    "portfolio" : {
+        "title" : "Portfolio",
+        "subtitle" : "Ultimos proyectos",
+        "proyects" : {
+            "p_1" : {
+                "data" : "App YouTube, realice esta aplicacion solo como una replica de la aplicacion oficial sin ningun tipo de intencion de violar sus politicas de privacidad. Estado de la aplicacion (Periodo de pruebas) aplicacion completa en un 15%, cada tanto continuo trabajando en ella y planeo completarla en un 100%.",
+                "tecnologias" : "Tecnologias utilizadas React, JavaScript, HTML5, CSS3."
+            },
+            "p_2" : {
+                "data" : "App web en donde se puede realizar la gestion de imagenes al estilo pinterest.",
+                "tecnologias" : "Tecnologias utilizadas JavaScript, Framework Express.js, MongoDB, Motor de plantillas EJS, Framework Bootstrap, CSS3, HTML5."
+            },
+            "p_3" : {
+                "data" : "App web de administracion de usuarios, con seguridad para evitar ataques como XSS, CSRF, SQL INJECTION, CODE INJECTION, BRUTE FORCE ROBOTS tambien incluye SSL y el archivo .htaccess",
+                "tecnologias" : "Tecnologias utilizadas PHP implementacion de PDO, Framework Bootstrap, HTML5, CSS3, DB MySql, DB deploy con Clever cloud."
+            },
+            "p_4" : {
+                "data" : "App web, fabrica de calzados con lineas de produccion y ordenes de produccion con modelo y color, estas estan supervisadas por 2 operadores, que realizan el control de calidad de los calzados.",
+                "tecnologias" : "Tecnologias utilizadas JavaScript, TypeScript, Framework Express.js, Mysql, CSS3, HTML5, Framework Tailwind, Motor de plantillas HandleBards, Testing con jest."
+            },
+            "p_5" : {
+                "data" : "App desktop, GUI que cuenta con un analizador lexico y sintactico y una seccion donde podemos ingresar consultas sql, luego de ejecutar el sistema nos devolvera el analisis del analizador lexico y sintactico con un mansaje de validacion de nuestra consulta.",
+                "tecnologias" : "Tecnologias utilizadas Java, IDE NetBeans, Librerias java-cup.jar, java-cup-11a.jar, Jflex.jar."
+            },
+            "p_6" : {
+                "data" : "App desktop, consiste en la administracion de una empresa que cuenta con Empleados, Usuarios, Oficinas, Productos, Pedidos, Pagos, Clientes, Linea de productos, Detalles de pedidos.",
+                "tecnologias" : "Tecnologias utilizadas Java, IDE NetBeans 8.2, MySql, Librerias mysql-connector-java-8.0.21.jar, jcalendar-1.3.2.jar, swingx-1.6.2.jar, NefAnimation_V2.1_jdk17.jar."
+            },
+            "p_7" : {
+                "data" : "App, consiste en un juego donde tenemos 7 leds, al iniciar los leds comienzan en color azul al llegar al extremo de la tira led espera 1seg a que el jugador presione el boton para continuar, en caso de pasado el tiempo sin presionar el boton, el juego nos muestra una led de color rojo y vuelve a iniciar el juego.",
+                "tecnologias" : "Tecnologias utilizadas Arduino, Tinkercat."
+            },
+            "p_8" : {
+                "data" : "Consiste en dos Aplicaciones que realizan un analisis lexico de 2 formas distintas, una es usando matrizes y la otra es usando codigo logico.",
+                "tecnologias" : "Tecnologias utilizadas C, C++."
+            },
+            "p_9" : {
+                "data" : "App desktop, consiste en la administracion de una editorial de libros, que ademas implementa la validacion y uso de ISBNS.",
+                "tecnologias" : "Tecnologias utilizadas C, C++."
+            }
+        },
+        "experience" : {
+            "title" : "Cuál es mi experiencia profesional?",
+            "data" : {
+                "txt_1" : "Trabajo como desarrollado web freelance hace 4 años, aplicando a proyectos.",
+                "txt_2" : "He tenido la oportunidad de trabajar para empresas privadas y entidades públicas.",
+                "txt_3" : "Actualmente, me encuentro en la búsqueda de un puesto laboral que me enriquezca como profesional, donde pueda colaborar en grandes proyectos con expertos en el área de desarrollo web."
+            }
+        },
+        "additional" : {
+            "txt_1" : "Proyectos terminados",
+            "txt_2" : "Clientes satisfechos",
+            "txt_3" : "Proyectos activos",
+            "txt_4" : "Años de experiencia"
+        }
+    },
+    "education" : {
+        "title" : "Educación",
+        "subtitle" : "Estudios realizados",
+        "data" : {
+            "item_1" : {
+                "title" : "ISI",
+                "subtitle" : "UTN",
+                "status" : "En curso...",
+                "description" : {
+                    "txt_1" : "Carrera Ingeniería en Sistemas de Información, Estudiante avanzado y becario, en esta carrera logré fortificar las bases de la programación implementando soluciones tecnológicas en casos prácticos reales con distintos lenguajes de programación, diversas metodologías y técnicas.",
+                    "txt_2" : "Tecnologías aplicadas: JavaScript, HTML, CSS, Bootstrap, Tailwind, C/C++, Java, Haskell, Prolog, MySql, Arduino, Git, GitHub. Linux, Node.js, npm, Unit Testing con Jest, IDE Apache NetBeans 8.1/14.0, Dev c++, editor de codigo Visual Stude Code, Jira Software, Trello."
+                }
+            },
+            "item_2" : {
+                "title" : "YoProgramo",
+                "subtitle" : "Arg.Programa",
+                "status" : "Abril 2021 - Febrero 2023",
+                "description" : {
+                    "txt_1" : "En este curso desarrollé todos los conocimientos que debe tener un Full Stack Developer para llevar a cabo cualquier aplicación sin problemas.",
+                    "txt_2" : "Tecnologías aplicadas: Angular, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Java con Spring Boot, POO, MySql, Integración continua y entrega continua (CI/CD), Docker, Clever cloud, Hostings como Render, Firebase, Heroku, Metodología Scrum."
+                }
+            },
+            "item_3" : {
+                "title" : "React.js",
+                "subtitle" : "UTN",
+                "status" : "Junio 2022 - Agosto 2022",
+                "description" : {
+                    "txt_1" : "En este curso desarrollé soluciones en React.js siendo este el framework para JavaScript más usado actualmente que nos permite desarrollar aplicaciones web en el frontend (SPA, single page applications), principalmente implemente: variables, jsx, vistas, componentes, estados, hooks, estructuras de control, listas y mucho mas.",
+                    "txt_2" : "Tecnologías aplicadas: JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Tailwind, MongoDB, Firebase."
+                }
+            },
+            "item_4" : {
+                "title" : "Next.js",
+                "subtitle" : "midulive",
+                "status" : "Enero 2023 - Febrero 2023",
+                "description" : {
+                    "txt_1" : "En este curso desarrollé soluciones en Next.js usando todo lo aprendido de React.js, uno de los proyectos que realize con este framework de React.js fue este portafolio.",
+                    "txt_2" : "Tecnologías aplicadas: JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Tailwind, MongoDB, Firebase."
+                }
+            },
+            "item_5" : {
+                "title" : "JavaScript",
+                "subtitle" : "UTN",
+                "status" : "Marzo 2022 - Mayo 2022",
+                "description" : {
+                    "txt_1" : "En este proyecto desarrollé soluciones en JavaScript fortaleciendo los fundamentos de este lenguaje de programación, principalmente implemente: Sintaxis & Variables, Ciclos/Iteraciones, Funciones, Objetos, Arrays, DOM, Eventos, Storage & JSON, Operadores Avanzados, Promesas/Async, AJAX y Fetch, Axios, Node.js, Metodología Scrum.",
+                    "txt_2" : "Tecnologías aplicadas: Framework Express.js, Motores de plantillas EJS & Handlerbars, Implementacion de Cookies, POO, Unit Testing Jest, Bootstrap, Tailwind, MySql, Hosting Railway."
+                }
+            }
+        } 
+    },
+    "contact" : {
+        "subtitle" : "Formulario de contacto",
+        "inputs" : {
+            "i_1" : "Nombre...",
+            "i_2" : "Apellido...",
+            "i_3" : "Correo...",
+            "i_4" : "Consulta..."
+        }       
     }
 }

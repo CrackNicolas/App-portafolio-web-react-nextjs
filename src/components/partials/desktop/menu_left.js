@@ -46,7 +46,9 @@ export default function ComponentMenuLeft(){
                         <ion-icon name={(icon_selected == "inicio")? "easel" : "easel-outline"}></ion-icon>
                     </div>
                     <span className={style.load_text} style={get_selected("inicio")}>
-                        Inicio
+                        {
+                            t('menu.i_1')
+                        }
                     </span>
                 </Link>
                 <Link to="sobre-mi" spy={true} smooth={true} offset={0} duration={500} style={get_selected("sobre-mi")} onClick={() => setIcon_selected("sobre-mi")} className={style.item}>
@@ -55,7 +57,7 @@ export default function ComponentMenuLeft(){
                     </div>
                     <span className={style.load_text} style={get_selected("sobre-mi")}>
                         {
-                            t('test')
+                            t('menu.i_2')
                         }
                     </span>
                 </Link>
@@ -64,7 +66,9 @@ export default function ComponentMenuLeft(){
                         <ion-icon name={(icon_selected == "servicios")? "book" : "book-outline"}></ion-icon>
                     </div>
                     <span className={style.load_text} style={get_selected("servicios")}>
-                        Servicios
+                        {
+                            t('menu.i_3')
+                        }
                     </span>
                 </Link>
                 <Link to="portfolio" spy={true} smooth={true} offset={0} duration={500} style={get_selected("portfolio")} onClick={() => setIcon_selected("portfolio")} className={style.item}>
@@ -72,7 +76,9 @@ export default function ComponentMenuLeft(){
                         <ion-icon name={(icon_selected == "portfolio")? "briefcase" : "briefcase-outline"}></ion-icon>
                     </div>
                     <span className={style.load_text} style={get_selected("portfolio")}>
-                        Portfolio
+                        {
+                            t('menu.i_4')
+                        }
                     </span>
                 </Link>
                 <Link to="educacion" spy={true} smooth={true} offset={0} duration={500} style={get_selected("educacion")} onClick={() => setIcon_selected("educacion")} className={style.item}>
@@ -80,7 +86,9 @@ export default function ComponentMenuLeft(){
                         <ion-icon name={(icon_selected == "educacion")? "text" : "text-outline"}></ion-icon>
                     </div>
                     <span className={style.load_text} style={get_selected("educacion")}>
-                        Educación
+                        {
+                            t('menu.i_5')
+                        }
                     </span>
                 </Link>
                 <Link to="contactar" spy={true} smooth={true} offset={0} duration={500} style={get_selected("contactar")} onClick={() => setIcon_selected("contactar")} className={style.item}>
@@ -88,7 +96,9 @@ export default function ComponentMenuLeft(){
                         <ion-icon name={(icon_selected == "contactar")? "mail" : "mail-outline"}></ion-icon>
                     </div>
                     <span className={style.load_text} style={get_selected("contactar")}>
-                        Contactar
+                        {
+                            t('menu.i_6')
+                        }
                     </span>
                 </Link>
                 <Link className={style.item} onClick={() => setLenguage_selected(!lenguaje_selected)}>
@@ -96,7 +106,9 @@ export default function ComponentMenuLeft(){
                         <img src={get_selected_lenguaje()}/>
                     </div>
                     <span className={style.load_text}>
-                        Idioma
+                        {
+                            t('menu.i_7')
+                        }
                     </span>
                 </Link>
             </article>
