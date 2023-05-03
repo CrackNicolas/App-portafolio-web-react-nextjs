@@ -33,16 +33,18 @@ export default function ComponentIsDeskatop(){
         }
     })
 
-    return (
-        <section>
-            <ComponentMenuLeft/>
-            <ComponentInicio/>
-            <ComponentSobreMi/>
+    /** 
+     * <ComponentSobreMi/>
             <ComponentServices/>
             <ComponentPortfolio/>
             <ComponentEducacion/>
             <ComponentContactar/>
             <ComponentFooter/>
+            **/
+    return (
+        <section>
+            <ComponentMenuLeft/>
+            <ComponentInicio/>
             <ComponentRedesSociales/>
         </section>
     )
