@@ -61,3 +61,18 @@
     padding-bottom: 35px;
     align-self: end;
 }
+@media (max-width : 410px){
+    .menu{
+        width: 50px;
+    }
+    .menu .items div:nth-child(1){
+        gap: 15px;
+    }
+    .menu .items .item .load_icon ion-icon{
+        width: 17px;
+        height: 17px;
+    }
+    .menu .items .item .load_text{
+        font-size: 9.2px;
+    }
+}

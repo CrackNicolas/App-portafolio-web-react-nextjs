@@ -34,3 +34,8 @@
 .menu .items .line{
   color: var(--color-text-primary);
 }
+@media (max-width : 410px){
+    .menu{
+      right: 0px;
+    } 
+}

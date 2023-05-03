@@ -118,6 +118,7 @@
     }
     .message{
         font-size: 15px;
+        margin-bottom: 30px;
     }
     .buttons{
         gap: 10px;
@@ -155,4 +156,54 @@
         height: 250px;
     }    
 }
-
+@media (max-width : 410px){
+    .container{
+        padding: 20px 35px 175px 60px;
+        gap: 35px;
+    }
+    .perfil img{
+        width: 230px;
+        height: 230px;
+    }  
+    .hello{
+        font-size: 22px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .specialist{
+        font-size: 17px;
+    }
+    .message{
+        font-size: 13px;
+    }
+    .buttons a{
+        font-size: 13px;
+        padding: 8px 10px;
+        gap: 5px;
+    }
+}
+@media (max-width : 365px){
+    .perfil img{
+        width: 210px;
+        height: 210px;
+    } 
+    .hello{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 35px;
+    }
+    .buttons a{
+        padding: 8px;
+        gap: 4px;
+    }
+    .specialist{
+        font-size: 16px;
+    }
+}
+@media (max-width : 335px){
+    .hello, .name{
+        letter-spacing: 0.8px;
+    }
+}
