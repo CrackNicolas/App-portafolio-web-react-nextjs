@@ -148,10 +148,10 @@
     "contact" : {
         "subtitle" : "Formulario de contacto",
         "inputs" : {
-            "i_1" : "Nombre...",
-            "i_2" : "Apellido...",
-            "i_3" : "Correo...",
-            "i_4" : "Consulta..."
+            "j_1" : "Nombre...",
+            "j_2" : "Apellido...",
+            "j_3" : "Correo...",
+            "j_4" : "Consulta..."
         }       
     }
 }

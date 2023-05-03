@@ -15,14 +15,18 @@ export default function ComponentContactar(){
                 <ion-icon name="mail-outline"></ion-icon>
             </h2>
             <article className={style.form}>
-                <h2>Formulario de contacto</h2>
+                <h2>
+                    {
+                        t('contact.subtitle')
+                    }    
+                </h2>
                 <form action="" method="POST">
                     <div>
-                        <input type="text" placeholder={t('contact.inputs.i_1')}></input>
-                        <input type="text" placeholder={t('contact.inputs.i_2')}></input>
+                        <input type="text" placeholder={t('contact.inputs.j_1')}></input>
+                        <input type="text" placeholder={t('contact.inputs.j_2')}></input>
                     </div>
-                    <input type="text" placeholder={t('contact.inputs.i_3')}></input>
-                    <textarea type="text" placeholder={t('contact.inputs.i_4')}/>
+                    <input type="text" placeholder={t('contact.inputs.j_3')}></input>
+                    <textarea type="text" placeholder={t('contact.inputs.j_4')}/>
                     <button type="submit">
                         <ion-icon name="send-outline"></ion-icon>
                         <span>

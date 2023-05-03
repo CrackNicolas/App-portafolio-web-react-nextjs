@@ -148,10 +148,10 @@
     "contact" : {
         "subtitle" : "Contact Form",
         "inputs" : {
-            "i_1" : "Name...",
-            "i_2" : "Last name...",
-            "i_3" : "Mail...",
-            "i_4" : "Consultation..."
+            "j_1" : "Name...",
+            "j_2" : "Last name...",
+            "j_3" : "Mail...",
+            "j_4" : "Consultation..."
         }       
     }
 }
