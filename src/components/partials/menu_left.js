@@ -1,13 +1,13 @@
 import {Link} from 'react-scroll';
-import style from '../../../styles/partials/desktop/menu_left.module.css'
+import style from '../../styles/partials/menu_left.module.css'
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import en from '../../../i18n/en.json';
-import es from '../../../i18n/es.json';
+import en from '../../i18n/en.json';
+import es from '../../i18n/es.json';
 
 export default function ComponentMenuLeft(){
     const [icon_selected,setIcon_selected] = useState("");

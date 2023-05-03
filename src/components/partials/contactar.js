@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import style from '../../../styles/partials/desktop/contactar.module.css';
+import style from '../../styles/partials/contactar.module.css';
 
 export default function ComponentContactar(){
     const {t} = useTranslation();

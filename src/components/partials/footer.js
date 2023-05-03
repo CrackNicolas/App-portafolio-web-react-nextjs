@@ -1,5 +1,5 @@
 import {Link} from 'react-scroll';
-import style from '../../../styles/partials/desktop/footer.module.css';
+import style from '../../styles/partials/footer.module.css';
 
 export default function ComponentFooter(){
     return (

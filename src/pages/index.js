@@ -5,20 +5,10 @@ import { useMediaQuery } from 'react-responsive'
 
 import ClientOnly from '@/components/layouts/client_only'
 import ComponentIsDeskatop from '@/components/layouts/desktop'
-import ComponentIsTablet from '@/components/layouts/tablet'
-import ComponentIsMobile from '@/components/layouts/mobile'
 
 export default function Home() {
   const is_desktop = useMediaQuery({
-    query: '(min-width: 1280px)'
-  })
-  const is_tablet = useMediaQuery({
-    minWidth: 600, 
-    maxWidth: 1280
-  })
-  const is_mobile = useMediaQuery({
-    minWidth: 320, 
-    maxWidth: 600
+    minWidth: 320
   })
 
   return (
@@ -35,9 +25,7 @@ export default function Home() {
       <main>
         <ClientOnly>
           {
-            is_desktop? <ComponentIsDeskatop/> :
-            is_tablet?  <ComponentIsDeskatop/> :
-            is_mobile?  <ComponentIsDeskatop/> : ""
+            is_desktop && <ComponentIsDeskatop/>
           }
           <Script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></Script>
           <Script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></Script>

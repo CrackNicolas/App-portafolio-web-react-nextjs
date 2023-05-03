@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import style from '../../../styles/partials/desktop/educacion.module.css';
+import style from '../../styles/partials/educacion.module.css';
 import { useTranslation } from 'react-i18next';
 
 export default function ComponentEducacion(){

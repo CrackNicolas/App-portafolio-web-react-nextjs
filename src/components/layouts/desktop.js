@@ -1,14 +1,14 @@
 import React from "react";
 
-import ComponentMenuLeft from "../partials/desktop/menu_left.js";
-import ComponentInicio from "../partials/desktop/inicio.js";
-import ComponentSobreMi from "../partials/desktop/sobre_mi.js";
-import ComponentServices from "../partials/desktop/services.js";
-import ComponentPortfolio from "../partials/desktop/portfolio.js";
-import ComponentEducacion from "../partials/desktop/educacion.js";
-import ComponentContactar from "../partials/desktop/contactar.js";
-import ComponentFooter from "../partials/desktop/footer.js";
-import ComponentRedesSociales from "../partials/desktop/redes_sociales.js";
+import ComponentMenuLeft from "../partials/menu_left.js";
+import ComponentInicio from "../partials/inicio.js";
+import ComponentSobreMi from "../partials/sobre_mi.js";
+import ComponentServices from "../partials/services.js";
+import ComponentPortfolio from "../partials/portfolio.js";
+import ComponentEducacion from "../partials/educacion.js";
+import ComponentContactar from "../partials/contactar.js";
+import ComponentFooter from "../partials/footer.js";
+import ComponentRedesSociales from "../partials/redes_sociales.js";
 
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
@@ -33,8 +33,12 @@ export default function ComponentIsDeskatop(){
         }
     })
 
+    /** <ComponentInicio/>
+      
+     
+    */
     /** 
-     * <ComponentSobreMi/>
+     * 
             <ComponentServices/>
             <ComponentPortfolio/>
             <ComponentEducacion/>
@@ -44,6 +48,7 @@ export default function ComponentIsDeskatop(){
     return (
         <section>
             <ComponentMenuLeft/>
+            
             <ComponentInicio/>
             <ComponentRedesSociales/>
         </section>

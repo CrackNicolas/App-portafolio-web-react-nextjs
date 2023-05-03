@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import style from '../../../styles/partials/desktop/portfolio.module.css';
+import style from '../../styles/partials/portfolio.module.css';
 import { useTranslation } from 'react-i18next';
 
 export default function ComponentPortfolio(){

@@ -1,4 +1,4 @@
-import style from '../../../styles/partials/desktop/redes_sociales.module.css';
+import style from '../../styles/partials/redes_sociales.module.css';
 
 export default function ComponentRedesSociales(){
     return (

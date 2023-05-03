@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import style from '../../../styles/partials/desktop/sobre_mi.module.css';
+import style from '../../styles/partials/sobre_mi.module.css';
 
 export default function ComponentSobreMi(){
     const {t} = useTranslation();

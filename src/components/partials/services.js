@@ -1,4 +1,4 @@
-import style from '../../../styles/partials/desktop/services.module.css';
+import style from '../../styles/partials/services.module.css';
 
 import { useTranslation } from 'react-i18next';
 

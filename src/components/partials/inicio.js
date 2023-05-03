@@ -1,4 +1,4 @@
-import style from '../../../styles/partials/desktop/inicio.module.css';
+import style from '../../styles/partials/inicio.module.css';
 import { useTranslation } from 'react-i18next';
 
 export default function ComponentInicio(){
