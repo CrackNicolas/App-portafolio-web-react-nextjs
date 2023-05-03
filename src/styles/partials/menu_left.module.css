@@ -63,7 +63,7 @@
 }
 @media (max-width : 410px){
     .menu{
-        width: 50px;
+        width: 45px;
     }
     .menu .items div:nth-child(1){
         gap: 15px;

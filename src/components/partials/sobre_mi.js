@@ -1,8 +1,11 @@
+import { useMediaQuery } from 'react-responsive'
 import { useTranslation } from 'react-i18next';
 import style from '../../styles/partials/sobre_mi.module.css';
 
 export default function ComponentSobreMi(){
     const {t} = useTranslation();
+
+    const is_mobile = useMediaQuery({ query: '(max-width: 575px)' });
 
     return (
         <section id="sobre-mi" className={style.container}>
@@ -29,14 +32,24 @@ export default function ComponentSobreMi(){
                 }
             </p>
             <article className={style.habilidades}>
-                <div className={style.porcentaje} style={{"--value-content-educacion":1}}>
+                <div className={style.porcentaje} style={{"--number-porcentaje":100}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
-                        <i className={style.bootstrap+" bx bxl-bootstrap bx-md"}></i>
+                        <i className={style.bootstrap+" bx bxl-bootstrap bx-"+((is_mobile)? "xs" : "md")}></i>
                         <h2>
                             100
                             <span>%</span>
@@ -44,11 +57,21 @@ export default function ComponentSobreMi(){
                         <p>Bootstrap</p>
                     </div>
                 </div>
-                <div className={style.porcentaje} style={{"--value-content-educacion":2}}>
+                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/mysql-logo.png"/>
@@ -62,11 +85,21 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
-                        <i className={style.react+" bx bxl-react bx-md"}></i>
+                        <i className={style.react+" bx bxl-react bx-"+((is_mobile)? "xs" : "md")}></i>
                         <h2>
                             90
                             <span>%</span>
@@ -77,8 +110,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/java-coffee-cup-logo.png"/>
@@ -92,8 +135,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/angularjs.png"/>
@@ -107,8 +160,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"/>
@@ -122,8 +185,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/css3.png"/>
@@ -137,8 +210,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/html-5.png"/>
@@ -152,8 +235,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/php.png"/>
@@ -167,8 +260,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="/images/npm.png"/>
@@ -182,8 +285,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/node-js.png"/>
@@ -197,8 +310,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/javascript.png"/>
@@ -212,8 +335,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/tailwind_css.png"/>
@@ -227,8 +360,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"/>
@@ -242,11 +385,21 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
-                        <i className={style.mongodb+" bx bxl-mongodb bx-md"}></i>
+                        <i className={style.mongodb+" bx bxl-mongodb bx-"+((is_mobile)? "xs" : "md")}></i>
                         <h2>
                             70
                             <span>%</span>
@@ -257,11 +410,21 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
-                        <i className={style.jquery+" bx bxl-jquery bx-md"}></i>
+                        <i className={style.jquery+" bx bxl-jquery bx-"+((is_mobile)? "xs" : "md")}></i>
                         <h2>
                             70
                             <span>%</span>
@@ -272,8 +435,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":60}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/arduino.png"/>
@@ -287,11 +460,21 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
-                    <img src="/images/next.png"/>
+                        <img src="/images/next.png"/>
                         <h2>
                             80
                             <span>%</span>
@@ -302,8 +485,18 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
                         <img className={style.jira} src="/images/jira.png"/>
@@ -317,11 +510,21 @@ export default function ComponentSobreMi(){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
+                        {
+                            is_mobile? 
+                                <>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                    <circle cx="30" cy="30" r="30"></circle>
+                                </>
+                            :
+                                <>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                    <circle cx="50" cy="50" r="50"></circle>
+                                </>
+                        }
                     </svg>
                     <div className={style.number}>
-                        <i className={style.trello+" lab la-trello bx-md"}></i>
+                        <i className={style.trello+" lab la-trello bx-"+((is_mobile)? "xs" : "md")}></i>
                         <h2>
                             80
                             <span>%</span>

@@ -32,14 +32,7 @@ export default function ComponentIsDeskatop(){
             }
         }
     })
-
-    /** <ComponentInicio/>
-      
-     
-    */
-    /** 
-     * 
-            <ComponentServices/>
+    /*
             <ComponentPortfolio/>
             <ComponentEducacion/>
             <ComponentContactar/>
@@ -48,8 +41,9 @@ export default function ComponentIsDeskatop(){
     return (
         <section>
             <ComponentMenuLeft/>
-            
             <ComponentInicio/>
+            <ComponentSobreMi/>
+            <ComponentServices/>
             <ComponentRedesSociales/>
         </section>
     )

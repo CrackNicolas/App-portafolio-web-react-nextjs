@@ -99,7 +99,7 @@
         display: grid;
         grid-template-columns: 1fr;
         background-image: none;
-        padding: 20px 40px 175px 80px;
+        padding: 20px 40px 50px 80px;
     }
     .container .perfil{
         text-align: center;
@@ -158,7 +158,7 @@
 }
 @media (max-width : 410px){
     .container{
-        padding: 20px 35px 175px 60px;
+        padding: 20px 35px 50px 60px;
         gap: 35px;
     }
     .perfil img{
