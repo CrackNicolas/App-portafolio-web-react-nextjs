@@ -6,7 +6,7 @@ import { useRef, useState } from 'react';
 export default function ComponentPortfolio(){
     const {t} = useTranslation();
     
-    const [name_button,setName_button] = useState("Ver más");
+    const [name_button,setName_button] = useState("button_view.txt_1");
     const proyects = useRef();
 
     const view_proyects = () => {
@@ -215,11 +215,7 @@ export default function ComponentPortfolio(){
             </button>
             <article className={style.experiencia}>
                 <div>
-                    <h3>
-                        {
-                            t('portfolio.experience.title')
-                        }
-                    </h3>
+                    <h3>{ t('portfolio.experience.title') }</h3>
                     <p>
                         {
                             t('portfolio.experience.data.txt_1')
