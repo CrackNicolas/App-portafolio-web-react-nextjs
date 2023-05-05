@@ -32,10 +32,6 @@ export default function ComponentIsDeskatop(){
             }
         }
     })
-    /*
-            <ComponentContactar/>
-            <ComponentFooter/>
-            **/
     return (
         <section>
             <ComponentMenuLeft/>
@@ -44,6 +40,8 @@ export default function ComponentIsDeskatop(){
             <ComponentServices/>
             <ComponentPortfolio/>
             <ComponentEducacion/>
+            <ComponentContactar/>
+            <ComponentFooter/>
             <ComponentRedesSociales/>
         </section>
     )

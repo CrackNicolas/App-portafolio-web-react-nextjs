@@ -37,7 +37,6 @@
     gap: 10px;
 }
 .container .form form{
-    position: relative;
     display: grid;
     row-gap: 15px;
     padding: 0px 5px;
@@ -57,6 +56,7 @@
     letter-spacing: 1.5px;
     font-size: 18px;
     color: var(--color-text-primary);
+    overflow: auto;
 }
 .container .form textarea{
     font-size: 19.5px;
@@ -91,3 +91,46 @@
     transition-timing-function: ease-in-out;
     transform: rotate(-35deg);
 } 
+@media (max-width : 575px){
+    .container{
+        padding: 20px 40px 20px 80px;
+    }
+    .container .title{
+        font-size: 20px;
+    }
+    .container .title ion-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .container .form h2{
+        font-size: 22px;
+        padding-top: 5px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    .container .form form div{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+}
+@media (max-width : 410px){
+    .container{
+        padding: 20px 30px 50px 60px;
+    }
+    .container .form h2{
+        padding: 5px 0px 15px 0px;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    .container .form input, .container .form textarea{
+        padding: 10px 10px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    .container .form button{
+        gap: 10px;
+        padding: 10px 15px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}
