@@ -104,7 +104,7 @@ export default function ComponentMenuLeft(){
                     </Link>
                 </div>
                 <div>
-                    <Link className={style.item} onClick={() => setLenguage_selected(!lenguaje_selected)}>
+                    <a className={style.item} onClick={() => setLenguage_selected(!lenguaje_selected)}>
                         <div className={style.load_lenguage}>
                             <img src={get_selected_lenguaje()}/>
                         </div>
@@ -113,7 +113,7 @@ export default function ComponentMenuLeft(){
                                 t('menu.i_7')
                             }
                         </span>
-                    </Link>
+                    </a>
                 </div>
             </article>
         </section>
