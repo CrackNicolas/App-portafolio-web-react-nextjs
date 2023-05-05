@@ -264,6 +264,7 @@
 @media (max-width : 575px){
     .container{
         padding: 20px 40px 20px 80px;
+        margin-bottom: 70px;
     }
     .container .title{
         font-size: 20px;
@@ -344,6 +345,7 @@
 @media (max-width : 410px){
     .container{
         padding: 20px 30px 50px 60px;
+        margin-bottom: 40px;
     }
     .container .subtitle{
         padding: 0px;

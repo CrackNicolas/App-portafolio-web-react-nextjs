@@ -9,7 +9,7 @@ export default function ComponentEducacion(){
     const description_education = useRef();
 
     const view_description = () => {
-        setName_button( (description_education.current.style.height == 'auto')? "Ver más" : "Ver menos");
+        setName_button( (description_education.current.style.height == 'auto')? 'button_view.txt_1' : 'button_view.txt_2' );
         description_education.current.style.height = (description_education.current.style.height == 'auto')? "520px" : "auto";
     }
 
@@ -196,8 +196,12 @@ export default function ComponentEducacion(){
                 </div>
             </article>
             <button onClick={() => view_description()}>
-                <span>{name_button}</span>
-                <ion-icon name={(name_button == "Ver más")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
+                <span>
+                    { 
+                        t(name_button)
+                    }
+                </span>
+                <ion-icon name={(name_button == "button_view.txt_1")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
             </button>
         </section>
     )

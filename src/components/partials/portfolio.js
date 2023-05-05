@@ -211,7 +211,7 @@ export default function ComponentPortfolio(){
                         t(name_button)
                     }
                 </span>
-                <ion-icon name={(name_button == "Ver más")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
+                <ion-icon name={(name_button == "button_view.txt_1")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
             </button>
             <article className={style.experiencia}>
                 <div>
