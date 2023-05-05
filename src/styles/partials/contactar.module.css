@@ -94,6 +94,7 @@
 @media (max-width : 575px){
     .container{
         padding: 20px 40px 20px 80px;
+        margin-bottom: 0px;
     }
     .container .title{
         font-size: 20px;
