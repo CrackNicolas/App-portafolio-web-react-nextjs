@@ -1,4 +1,8 @@
 {
+    "button_view" : {
+        "txt_1" : "See more",
+        "txt_2" : "See less"
+    },
     "menu" : {
         "i_1" : "Start",
         "i_2" : "About me",

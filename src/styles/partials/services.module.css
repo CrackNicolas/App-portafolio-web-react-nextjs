@@ -104,6 +104,9 @@
         width: 20px;
         height: 20px;
     }
+    .container .description{
+        margin-bottom: -120px;
+    }
     .container .description .item{
         padding: 15px 10px 10px 10px;
     }

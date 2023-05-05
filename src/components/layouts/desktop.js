@@ -33,7 +33,7 @@ export default function ComponentIsDeskatop(){
         }
     })
     /*
-            <ComponentPortfolio/>
+            
             <ComponentEducacion/>
             <ComponentContactar/>
             <ComponentFooter/>
@@ -44,6 +44,7 @@ export default function ComponentIsDeskatop(){
             <ComponentInicio/>
             <ComponentSobreMi/>
             <ComponentServices/>
+            <ComponentPortfolio/>
             <ComponentRedesSociales/>
         </section>
     )

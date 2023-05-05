@@ -6,11 +6,11 @@ export default function ComponentEducacion(){
     const {t} = useTranslation();
 
     const [name_button,setName_button] = useState("Ver más");
-    const button = useRef();
+    const description_education = useRef();
 
     const view_description = () => {
-        setName_button( (button.current.style.height == 'auto')? "Ver más" : "Ver menos");
-        button.current.style.height = (button.current.style.height == 'auto')? "520px" : "auto";
+        setName_button( (description_education.current.style.height == 'auto')? "Ver más" : "Ver menos");
+        description_education.current.style.height = (description_education.current.style.height == 'auto')? "520px" : "auto";
     }
 
     return (
@@ -28,7 +28,7 @@ export default function ComponentEducacion(){
                     t('education.subtitle')
                 }
             </h3>
-            <article className={style.description} ref={button}>
+            <article className={style.description} ref={description_education}>
                 <div className={style.item}>
                     <div className={style.data}>
                         <ion-icon name="school-outline"></ion-icon>

@@ -1,10 +1,19 @@
 import { Link } from 'react-scroll';
 import style from '../../styles/partials/portfolio.module.css';
 import { useTranslation } from 'react-i18next';
+import { useRef, useState } from 'react';
 
 export default function ComponentPortfolio(){
     const {t} = useTranslation();
     
+    const [name_button,setName_button] = useState("Ver más");
+    const proyects = useRef();
+
+    const view_proyects = () => {
+        setName_button( (proyects.current.style.height == 'auto')? 'button_view.txt_1' : 'button_view.txt_2' );
+        proyects.current.style.height = (proyects.current.style.height == 'auto')? "475px" : "auto";
+    }
+
     return (
         <section id="portfolio" className={style.container}>
             <h2 className={style.title}>
@@ -20,7 +29,7 @@ export default function ComponentPortfolio(){
                     t('portfolio.subtitle')
                 }
             </h3>
-            <article className={style.proyect}>
+            <article className={style.proyect} ref={proyects}>
                 <div className={style.card}>
                     <img src="/images/youtube.png"/>
                     <div className={style.description}>
@@ -196,6 +205,14 @@ export default function ComponentPortfolio(){
                     </div>
                 </div>
             </article>
+            <button onClick={() => view_proyects()}>
+                <span>
+                    { 
+                        t(name_button)
+                    }
+                </span>
+                <ion-icon name={(name_button == "Ver más")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
+            </button>
             <article className={style.experiencia}>
                 <div>
                     <h3>
