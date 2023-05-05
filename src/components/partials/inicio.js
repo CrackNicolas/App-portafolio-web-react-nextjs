@@ -8,9 +8,7 @@ export default function ComponentInicio(){
         <section id="inicio" className={style.container}>
             <article className={style.description}>
                 <h2 className={style.hello}>
-                    {
-                        t('inicio.txt_1')
-                    }
+                    { t('inicio.txt_1') }
                 </h2>
                 <h1 className={style.name}>
                     Alejo Beltran
@@ -19,26 +17,16 @@ export default function ComponentInicio(){
                     Full Stack Development
                 </h4>
                 <p className={style.message}>
-                    {
-                        t('inicio.txt_2')
-                    }
+                    { t('inicio.txt_2') }
                 </p>
                 <div className={style.buttons}>
                     <a href="#contactar">
                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                        <span>
-                            {
-                                t('inicio.txt_3')
-                            }
-                        </span>
+                        <span>{ t('inicio.txt_3') }</span>
                     </a>
                     <a href="">
                         <ion-icon name="document-text-outline"></ion-icon>
-                        <span>
-                            {
-                                t('inicio.txt_4')
-                            }
-                        </span>
+                        <span>{ t('inicio.txt_4') }</span>
                     </a>
                 </div>
             </article>

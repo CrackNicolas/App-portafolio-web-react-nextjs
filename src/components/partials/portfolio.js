@@ -17,30 +17,20 @@ export default function ComponentPortfolio(){
     return (
         <section id="portfolio" className={style.container}>
             <h2 className={style.title}>
-                <span>
-                    {
-                        t('portfolio.title')
-                    }
-                </span>
+                <span>{ t('portfolio.title') }</span>
                 <ion-icon name="briefcase-outline"></ion-icon>
             </h2>
             <h3 className={style.subtitle}>
-                {
-                    t('portfolio.subtitle')
-                }
+                { t('portfolio.subtitle') }
             </h3>
             <article className={style.proyect} ref={proyects}>
                 <div className={style.card}>
                     <img src="/images/youtube.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_1.data')
-                            }
+                            { t('portfolio.proyects.p_1.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_1.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_1.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/My_youtube">
@@ -56,13 +46,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/pinterest.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_2.data')
-                            }
+                            { t('portfolio.proyects.p_2.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_2.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_2.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-pinterest-express.js">
@@ -75,13 +61,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/quizz.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_3.data')
-                            }
+                            { t('portfolio.proyects.p_3.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_3.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_3.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-stack-usuarios-php">
@@ -94,13 +76,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/QA.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_4.data')
-                            }
+                            { t('portfolio.proyects.p_4.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_4.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_4.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-control-de-calidad-calzados-express.js">
@@ -113,13 +91,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/Parser.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_5.data')
-                            }
+                            { t('portfolio.proyects.p_5.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_5.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_5.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-parser-mysql-java">
@@ -132,13 +106,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/Clasical_model.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_6.data')
-                            }
+                            { t('portfolio.proyects.p_6.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_6.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_6.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-clasicalmodels-java">
@@ -151,13 +121,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/Juego_pong.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_7.data')
-                            }
+                            { t('portfolio.proyects.p_7.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_7.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_7.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-juegopong-arduino">
@@ -170,13 +136,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/Analizador_lexico.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_8.data')
-                            }
+                            { t('portfolio.proyects.p_8.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_8.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_8.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-analizadoreslexicos-c">
@@ -189,13 +151,9 @@ export default function ComponentPortfolio(){
                     <img src="/images/editorial.png"/>
                     <div className={style.description}>
                         <p>
-                            {
-                                t('portfolio.proyects.p_9.data')
-                            }
+                            { t('portfolio.proyects.p_9.data') }
                             <br/>
-                            {
-                                t('portfolio.proyects.p_9.tecnologias')
-                            }
+                            { t('portfolio.proyects.p_9.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-editorialdelibros-c">
@@ -206,37 +164,25 @@ export default function ComponentPortfolio(){
                 </div>
             </article>
             <button onClick={() => view_proyects()}>
-                <span>
-                    { 
-                        t(name_button)
-                    }
-                </span>
+                <span>{ t(name_button) }</span>
                 <ion-icon name={(name_button == "button_view.txt_1")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
             </button>
             <article className={style.experiencia}>
                 <div>
                     <h3>{ t('portfolio.experience.title') }</h3>
                     <p>
-                        {
-                            t('portfolio.experience.data.txt_1')
-                        }
+                        { t('portfolio.experience.data.txt_1') }
                         <br/><br/>
-                        {
-                            t('portfolio.experience.data.txt_2')
-                        }
+                        { t('portfolio.experience.data.txt_2') }
                         <br/><br/>
-                        {
-                            t('portfolio.experience.data.txt_3')
-                        }
+                        { t('portfolio.experience.data.txt_3') }
                     </p>
                 </div>
                 <div>
                     <Link to="contactar" spy={true} smooth={true} offset={0} duration={500}>
                         <ion-icon name="mail-outline"></ion-icon>
                         <span>
-                            {
-                                t('inicio.txt_3')
-                            }
+                            { t('inicio.txt_3') }
                         </span>
                     </Link>
                 </div>
@@ -247,9 +193,7 @@ export default function ComponentPortfolio(){
                     <p>
                         <span>50+</span>
                         <span>
-                            {
-                                t('portfolio.additional.txt_1')
-                            }
+                            { t('portfolio.additional.txt_1') }
                         </span>
                     </p>
                 </div>
@@ -258,9 +202,7 @@ export default function ComponentPortfolio(){
                     <p>
                         <span>43</span>
                         <span>
-                            {
-                                t('portfolio.additional.txt_2')
-                            }
+                            { t('portfolio.additional.txt_2') }
                         </span>
                     </p>
                 </div>
@@ -269,9 +211,7 @@ export default function ComponentPortfolio(){
                     <p>
                         <span>4</span>
                         <span>
-                            {
-                                t('portfolio.additional.txt_3')
-                            }
+                            { t('portfolio.additional.txt_3') }
                         </span>
                     </p>
                 </div>
@@ -280,9 +220,7 @@ export default function ComponentPortfolio(){
                     <p>
                         <span>4</span>
                         <span>
-                            {
-                                t('portfolio.additional.txt_4')
-                            }
+                            { t('portfolio.additional.txt_4') }
                         </span>
                     </p>
                 </div>

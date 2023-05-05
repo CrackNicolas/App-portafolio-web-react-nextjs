@@ -11,25 +11,17 @@ export default function ComponentSobreMi(){
         <section id="sobre-mi" className={style.container}>
             <h2 className={style.title}>
                 <span>
-                    {
-                        t('sobre-mi.title')
-                    }
+                    { t('sobre-mi.title') }
                 </span>
                 <ion-icon name="person-outline"></ion-icon>
             </h2>
             <h4 className={style.contratan}>
-                {
-                    t('sobre-mi.subtitle')
-                }
+                { t('sobre-mi.subtitle') }
             </h4>
             <p className={style.description}>
-                {
-                    t('sobre-mi.description.line_1')
-                }
+                { t('sobre-mi.description.line_1') }
                 <br/>
-                {
-                    t('sobre-mi.description.line_2')
-                }
+                { t('sobre-mi.description.line_2') }
             </p>
             <article className={style.habilidades}>
                 <div className={style.porcentaje} style={{"--number-porcentaje":100}}>
