@@ -134,7 +134,7 @@
     border: 0.1px solid var(--color-text-secondary);
     font-size: 18px;
     font-weight: 600;
-    margin-left: 155px;
+    margin: -20px 0px 0px 155px;
     width: 170px;
     display: flex;
     justify-content: center;

@@ -1,6 +1,8 @@
 import style from '../../styles/partials/inicio.module.css';
 import { useTranslation } from 'react-i18next';
 
+import React from 'react';
+
 export default function ComponentInicio(){
     const {t} = useTranslation();
 
