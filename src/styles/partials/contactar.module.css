@@ -41,6 +41,14 @@
     row-gap: 15px;
     padding: 0px 5px;
 }
+.container .form .recaptcha{
+    padding-top: 15px;
+}
+.container .form .recaptcha div{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
 .container .form textarea{
     min-height: 50px;
     max-height: 100px;
