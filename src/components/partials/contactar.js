@@ -11,7 +11,7 @@ import { useForm } from 'react-hook-form';
 export default function ComponentContactar(){
     const {t} = useTranslation();
     
-    const {register, formState : { errors },handleSubmit} = useForm();
+    const {register, formState : { errors }, handleSubmit} = useForm();
 
     const [state_captcha,setState_captcha] = useState(null);
     const ref_form = useRef(null);
@@ -43,30 +43,38 @@ export default function ComponentContactar(){
                 <h2> { t('contact.subtitle') } </h2>
                 <form action="" method="POST" ref={ref_form} onSubmit={handleSubmit(onSubmit)}>
                     <div>
-                        <input type="text" placeholder={ t('contact.inputs.j_1') } {...register('name', {
-                            required : true,
-                            maxLength : 10
-                        })}  />
-                        {errors.name?.type === "required" && <p>El nombre es requerido</p> }
-                        {errors.name?.type === "maxLength" && <p>El nombre debe tener menos de 10 caracteres</p> }
-                        <input type="text" placeholder={ t('contact.inputs.j_2') } {...register('last_name',{
-                            required : true,
-                            maxLength : 10
-                        })} />
-                        {errors.last_name?.type === "required" && <p>El apellido es requerido</p> }
-                        {errors.last_name?.type === "maxLength" && <p>El apellido debe tener menos de 10 caracteres</p> }
+                        <div className={style.content_input}>
+                            {errors.name?.type === "required" && <p>El nombre es requerido</p> }
+                            {errors.name?.type === "maxLength" && <p>El nombre debe tener menos de 10 caracteres</p> }
+                            <input type="text" placeholder={ t('contact.inputs.j_1') } {...register('name', {
+                                required : true,
+                                maxLength : 10
+                            })} />
+                        </div>
+                        <div className={style.content_input}>
+                            {errors.last_name?.type === "required" && <p>El apellido es requerido</p> }
+                            {errors.last_name?.type === "maxLength" && <p>El apellido debe tener menos de 10 caracteres</p> }
+                            <input type="text" placeholder={ t('contact.inputs.j_2') } {...register('last_name',{
+                                required : true,
+                                maxLength : 10
+                            })} />
+                        </div>
                     </div>
-                    <input type="email" placeholder={ t('contact.inputs.j_3') } {...register('email',{
-                        required : true,
-                        pattern : /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
-                    })} />
-                    {errors.email?.type === "required" && <p>El email es requerido</p> }
-                    {errors.email?.type === "pattern" && <p>Email incorrecto</p> }
-                    <textarea type="text" placeholder={ t('contact.inputs.j_4') } {...register('message',{
-                        required : true
-                    })}/>
-                    {errors.message?.type === "required" && <p>El mensaje es requerido</p> }
-                    {errors.message?.type === "maxLength" && <p>El mensaje debe tener menos de 10 caracteres</p> }
+                    <div className={style.content_input}>
+                        {errors.email?.type === "required" && <p>El email es requerido</p> }
+                        {errors.email?.type === "pattern" && <p>Email incorrecto</p> }
+                        <input type="email" placeholder={ t('contact.inputs.j_3') } {...register('email',{
+                            required : true,
+                            pattern : /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
+                        })} />
+                    </div>
+                    <div className={style.content_input}>
+                        {errors.message?.type === "required" && <p>El mensaje es requerido</p> }
+                        {errors.message?.type === "maxLength" && <p>El mensaje debe tener menos de 10 caracteres</p> }
+                        <textarea type="text" placeholder={ t('contact.inputs.j_4') } {...register('message',{
+                            required : true
+                        })}/>
+                    </div>
                     <aside className={style.recaptcha}>
                         <div>
                             <ReCAPTCHA
@@ -74,8 +82,8 @@ export default function ComponentContactar(){
                                 sitekey={key_recaptcha}
                                 onChange={onChange}
                             />
+                            {recaptcha.current?.getValue() == false && <p>Te faltó validar que no sos un robot</p>}
                         </div>
-                        {recaptcha.current?.getValue() == false && <p>Te faltó validar que no sos un robot.</p>}
                     </aside>
                     <button type="submit">
                         <ion-icon name="send-outline"></ion-icon>
