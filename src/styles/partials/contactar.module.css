@@ -44,7 +44,8 @@
 }
 .container .form form .content_input p, .container .form .recaptcha p{
     font-size: 15px;
-    color: #ff0000;
+    color: var(--color-text-secondary);
+    font-weight: 600;
 }
 .container .form form{
     display: grid;
@@ -53,14 +54,11 @@
 }
 .container .form .recaptcha{
     padding: 15px 0px 20px 0px;
+    overflow: auto;
 }
 .container .form .recaptcha div{
-    width: 300px;
-    text-align: center;
-    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .container .form textarea{
@@ -117,6 +115,14 @@
     transition-timing-function: ease-in-out;
     transform: rotate(-35deg);
 } 
+@media (max-width : 500px){
+    .container .form .recaptcha div{
+        transform: scale(0.95);
+    }
+    .container .form .recaptcha div p{
+        margin-top: -10px;
+    }
+}
 @media (max-width : 575px){
     .container{
         padding: 20px 40px 20px 80px;
@@ -144,6 +150,13 @@
     .container{
         padding: 20px 30px 50px 60px;
     }
+    .container .form .recaptcha div{
+        transform: scale(0.95);
+        overflow-x: hidden;
+    }
+    .container .form form .content_input p, .container .form .recaptcha p{
+        font-size: 13px;
+    }
     .container .form h2{
         padding: 5px 0px 15px 0px;
         font-size: 22px;
@@ -159,5 +172,14 @@
         padding: 10px 15px;
         font-size: 15px;
         letter-spacing: 1px;
+    }
+}
+@media (max-width : 345px){
+    .container .form .recaptcha div{
+        transform: scale(0.92);
+        overflow-x: hidden;
+    }
+    .container .form .recaptcha div p{
+        margin-top: -20px;
     }
 }

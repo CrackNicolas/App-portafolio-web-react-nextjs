@@ -18,7 +18,7 @@ export default function ComponentContactar(){
     const recaptcha = useRef(null);
 
     const onSubmit = () => {
-        if(state_captcha){
+        if(recaptcha.current.getValue()){
             /*emailjs.sendForm(
                 key_service_emailjs,
                 key_template_emaijs,
@@ -27,10 +27,7 @@ export default function ComponentContactar(){
             ).then(result => console.log(result.text)).catch(error => console.log(error))
             */
         }
-    }
-
-    const onChange = () => {
-        setState_captcha(recaptcha.current.getValue())
+        setState_captcha(recaptcha.current.getValue()? true : false);
     }
 
     return (
@@ -80,9 +77,9 @@ export default function ComponentContactar(){
                             <ReCAPTCHA
                                 ref={recaptcha}
                                 sitekey={key_recaptcha}
-                                onChange={onChange}
+                                onChange={() => {}}
                             />
-                            {recaptcha.current?.getValue() == false && <p>Te faltó validar que no sos un robot</p>}
+                            {state_captcha === false && <p>Te faltó validar que no sos un robot</p>}
                         </div>
                     </aside>
                     <button type="submit">
