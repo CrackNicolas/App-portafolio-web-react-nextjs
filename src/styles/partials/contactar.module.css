@@ -46,6 +46,7 @@
     font-size: 15px;
     color: var(--color-text-secondary);
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 .container .form form{
     display: grid;

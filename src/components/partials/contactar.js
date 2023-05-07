@@ -19,14 +19,17 @@ export default function ComponentContactar(){
 
     const onSubmit = () => {
         if(recaptcha.current.getValue()){
-            /*emailjs.sendForm(
+            emailjs.sendForm(
                 key_service_emailjs,
                 key_template_emaijs,
                 ref_form.current,
                 key_global_emailjs
             ).then(result => console.log(result.text)).catch(error => console.log(error))
-            */
         }
+        setState_captcha(recaptcha.current.getValue()? true : false);
+    }
+
+    const onChange = () => {
         setState_captcha(recaptcha.current.getValue()? true : false);
     }
 
@@ -77,7 +80,7 @@ export default function ComponentContactar(){
                             <ReCAPTCHA
                                 ref={recaptcha}
                                 sitekey={key_recaptcha}
-                                onChange={() => {}}
+                                onChange={onChange}
                             />
                             {state_captcha === false && <p>Te faltó validar que no sos un robot</p>}
                         </div>
