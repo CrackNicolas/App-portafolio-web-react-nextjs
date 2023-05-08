@@ -14,22 +14,27 @@ export default function ComponentContactar(){
     const {register, formState : { errors }, handleSubmit} = useForm();
 
     const [active_validation,setActive_validation] = useState(false)
+    const [send_email,setSend_email] = useState(false);
     const [state_captcha,setState_captcha] = useState(null);
     const ref_form = useRef(null);
     const recaptcha = useRef(null);
 
     const onSubmit = () => {
         if(recaptcha.current.getValue()){
-            /*
+            setState_captcha(true);
+            ref_form.current.reset();
+            recaptcha.current.reset();
+            setSend_email(true);
+            setActive_validation(false);
             emailjs.sendForm(
                 key_service_emailjs,
                 key_template_emaijs,
                 ref_form.current,
                 key_global_emailjs
             ).then(result => console.log(result.text)).catch(error => console.log(error))
-            */
+        }else{
+            setState_captcha(false);
         }
-        setState_captcha(recaptcha.current.getValue()? true : false);
     }
 
     const onChange = () => {
@@ -121,13 +126,21 @@ export default function ComponentContactar(){
                                 sitekey={key_recaptcha}
                                 onChange={onChange}
                             />
-                            {state_captcha === false && <p>Te faltó validar que no sos un robot</p>}
+                            {state_captcha === false && <p>Te faltó validar que no sos un robot</p> }
                         </div>
                     </aside>
                     <button type="submit" onClick={() => setActive_validation(true)}>
                         <ion-icon name="send-outline"></ion-icon>
                         <span>{ t('menu.i_6') }</span>
                     </button>
+                    {send_email && 
+                        <p className={style.send_email}>
+                            <span>
+                                Mensaje enviado con exito...
+                            </span>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </p>
+                    }
                 </form>
             </article>
         </section>

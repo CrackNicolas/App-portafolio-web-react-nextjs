@@ -115,7 +115,7 @@
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 2px;
-    margin-top: 7px;
+    margin-top: -10px;
 }
 .container .form input:focus, .container .form textarea:focus{
     box-shadow: 0 0 1px 2px var(--color-text-secondary);
@@ -132,6 +132,21 @@
     transition-timing-function: ease-in-out;
     transform: rotate(-35deg);
 } 
+.container .send_email{
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 17px;
+    padding: 7px 3px;
+    border-bottom: 0.1px solid var(--color-text-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .send_email ion-icon{
+    width: 20px;
+    height: 20px;
+}
 @media (max-width : 500px){
     .container .form .recaptcha div{
         transform: scale(0.95);
