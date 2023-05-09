@@ -24,9 +24,7 @@ export default function Home() {
       </Head>
       <main>
         <ClientOnly>
-          {
-            is_desktop && <ComponentIsDeskatop/>
-          }
+          {is_desktop && <ComponentIsDeskatop/>}
           <Script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></Script>
           <Script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></Script>
         </ClientOnly>

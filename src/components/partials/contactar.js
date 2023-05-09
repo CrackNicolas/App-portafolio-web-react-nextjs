@@ -1,3 +1,5 @@
+import React from 'react';
+
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -8,7 +10,7 @@ import { key_global_emailjs, key_service_emailjs, key_template_emaijs, key_recap
 import style from '../../styles/partials/contactar.module.css';
 import { useForm } from 'react-hook-form';
 
-export default function ComponentContactar(){
+export default React.forwardRef(function ComponentContactar(props,ref){
     const {t} = useTranslation();
     
     const {register, formState : { errors }, handleSubmit} = useForm();
@@ -66,7 +68,7 @@ export default function ComponentContactar(){
     }
 
     return (
-        <section id="contactar" className={style.container}>
+        <section ref={ref.contactar} id="contactar" className={style.container}>
             <h2 className={style.title}>
                 <span>{ t('inicio.txt_3') }</span>
                 <ion-icon name="mail-outline"></ion-icon>
@@ -145,4 +147,4 @@ export default function ComponentContactar(){
             </article>
         </section>
     )
-}
+})

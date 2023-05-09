@@ -1,14 +1,16 @@
+import React from 'react';
+
 import { useMediaQuery } from 'react-responsive'
 import { useTranslation } from 'react-i18next';
 import style from '../../styles/partials/sobre_mi.module.css';
 
-export default function ComponentSobreMi(){
+export default React.forwardRef(function ComponentSobreMi(props,ref){
     const {t} = useTranslation();
 
     const is_mobile = useMediaQuery({ query: '(max-width: 575px)' });
 
     return (
-        <section id="sobre-mi" className={style.container}>
+        <section ref={ref.sobre_mi} id="sobre-mi" className={style.container}>
             <h2 className={style.title}>
                 <span>
                     { t('sobre-mi.title') }
@@ -527,4 +529,4 @@ export default function ComponentSobreMi(){
             </article>
         </section>
     )
-}
+})

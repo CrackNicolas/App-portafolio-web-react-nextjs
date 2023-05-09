@@ -1,12 +1,13 @@
-import style from '../../styles/partials/services.module.css';
+import React from 'react';
 
+import style from '../../styles/partials/services.module.css';
 import { useTranslation } from 'react-i18next';
 
-export default function ComponentServices(){
+export default React.forwardRef(function ComponentServices(props,ref){
     const {t} = useTranslation();
 
     return (
-        <section id="servicios" className={style.container}>
+        <section ref={ref.services} id="servicios" className={style.container}>
             <h2 className={style.title}>
                 <span>
                     { t('servicios.title') }
@@ -53,4 +54,4 @@ export default function ComponentServices(){
             </article>
         </section>
     )
-}
+})

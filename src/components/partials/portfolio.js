@@ -1,9 +1,11 @@
+import React from 'react';
+
 import { Link } from 'react-scroll';
 import style from '../../styles/partials/portfolio.module.css';
 import { useTranslation } from 'react-i18next';
 import { useRef, useState } from 'react';
 
-export default function ComponentPortfolio(){
+export default React.forwardRef(function ComponentPortfolio(props,ref){
     const {t} = useTranslation();
     
     const [name_button,setName_button] = useState("button_view.txt_1");
@@ -15,7 +17,7 @@ export default function ComponentPortfolio(){
     }
 
     return (
-        <section id="portfolio" className={style.container}>
+        <section ref={ref.portfolio} id="portfolio" className={style.container}>
             <h2 className={style.title}>
                 <span>{ t('portfolio.title') }</span>
                 <ion-icon name="briefcase-outline"></ion-icon>
@@ -227,4 +229,4 @@ export default function ComponentPortfolio(){
             </article>
         </section>
     )
-}
+})

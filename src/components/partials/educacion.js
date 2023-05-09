@@ -1,8 +1,10 @@
+import React from 'react';
+
 import { useRef, useState } from 'react';
 import style from '../../styles/partials/educacion.module.css';
 import { useTranslation } from 'react-i18next';
 
-export default function ComponentEducacion(){
+export default React.forwardRef(function ComponentEducacion(props,ref){
     const {t} = useTranslation();
 
     const [name_button,setName_button] = useState("Ver más");
@@ -14,7 +16,7 @@ export default function ComponentEducacion(){
     }
 
     return (
-        <section id="educacion" className={style.container}>
+        <section ref={ref.educacion} id="educacion" className={style.container}>
             <h2 className={style.title}>
                 <span>{ t('education.title') }</span>
                 <ion-icon name="text-outline"></ion-icon>
@@ -145,4 +147,4 @@ export default function ComponentEducacion(){
             </button>
         </section>
     )
-}
+})

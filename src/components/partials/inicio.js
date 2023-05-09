@@ -1,13 +1,13 @@
+import React from 'react';
+
 import style from '../../styles/partials/inicio.module.css';
 import { useTranslation } from 'react-i18next';
 
-import React from 'react';
-
-export default function ComponentInicio(){
+export default React.forwardRef(function ComponentInicio(props,ref){
     const {t} = useTranslation();
 
     return (
-        <section id="inicio" className={style.container}>
+        <section ref={ref.inicio} id="inicio" className={style.container}>
             <article className={style.description}>
                 <h2 className={style.hello}>
                     { t('inicio.txt_1') }
@@ -37,4 +37,4 @@ export default function ComponentInicio(){
             </article>
         </section>
     )
-}
+})
