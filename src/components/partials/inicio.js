@@ -2,6 +2,7 @@ import React from 'react';
 
 import style from '../../styles/partials/inicio.module.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-scroll';
 
 export default React.forwardRef(function ComponentInicio(props,ref){
     const {t} = useTranslation();
@@ -22,10 +23,10 @@ export default React.forwardRef(function ComponentInicio(props,ref){
                     { t('inicio.txt_2') }
                 </p>
                 <div className={style.buttons}>
-                    <a href="#contactar">
+                    <Link to="contactar" spy={true} smooth={true} offset={0} duration={500}>
                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                         <span>{ t('inicio.txt_3') }</span>
-                    </a>
+                    </Link>
                     <a href="">
                         <ion-icon name="document-text-outline"></ion-icon>
                         <span>{ t('inicio.txt_4') }</span>

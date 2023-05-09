@@ -21,9 +21,11 @@ html,body{
   overflow-x: hidden;
 }
 body::-webkit-scrollbar{
-  width: 7px;
+  width: 8px;
 }
 body::-webkit-scrollbar-thumb{
   background: var(--color-text-secondary);
-  border-radius: 30px;
+}
+body::-webkit-scrollbar-thumb:hover{
+  border-radius: 10px;
 }

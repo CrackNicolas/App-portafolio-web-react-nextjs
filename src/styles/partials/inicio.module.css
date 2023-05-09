@@ -74,6 +74,7 @@
     background-color: var(--color-text-secondary);
 }
 .buttons a:hover{
+    cursor: pointer;
     transition-timing-function: ease-in-out;
     color: var(--color-font-primary);
     background-color: var(--color-text-secondary);
