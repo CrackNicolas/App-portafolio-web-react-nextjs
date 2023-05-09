@@ -27,7 +27,7 @@ export default React.forwardRef(function ComponentInicio(props,ref){
                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                         <span>{ t('inicio.txt_3') }</span>
                     </Link>
-                    <a href="">
+                    <a href="http://localhost:3000/pdf/Curriculum Beltran Alejo.pdf" download="Curriculum Beltran Alejo.pdf">
                         <ion-icon name="document-text-outline"></ion-icon>
                         <span>{ t('inicio.txt_4') }</span>
                     </a>
