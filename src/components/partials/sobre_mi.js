@@ -11,7 +11,7 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
 
     return (
         <section ref={ref.sobre_mi} id="sobre-mi" className={style.container}>
-            <h2 className={style.title}>
+            <h2 data-aos="fade-right" className={style.title}>
                 <span>
                     { t('sobre-mi.title') }
                 </span>

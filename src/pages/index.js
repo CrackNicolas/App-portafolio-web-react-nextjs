@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import Script from 'next/script'
 
+import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import ClientOnly from '@/components/layouts/client_only'
 import ComponentIsDeskatop from '@/components/layouts/desktop'
@@ -11,6 +15,10 @@ export default function Home() {
     minWidth: 320
   })
 
+  useEffect(() => {
+    AOS.init()
+  },[]);
+
   return (
     <>
       <Head>
@@ -19,7 +27,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"></link>
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

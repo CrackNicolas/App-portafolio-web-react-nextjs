@@ -10,16 +10,16 @@ export default React.forwardRef(function ComponentInicio(props,ref){
     return (
         <section ref={ref.inicio} id="inicio" className={style.container}>
             <article className={style.description}>
-                <h2 className={style.hello}>
+                <h2 className={style.hello} data-aos="fade-right" data-aos-duration="1500">
                     { t('inicio.txt_1') }
                 </h2>
-                <h1 className={style.name}>
+                <h1 className={style.name} data-aos="fade-right" data-aos-duration="2000">
                     Alejo Beltran
                 </h1>
-                <h4 className={style.specialist}>
+                <h4 className={style.specialist} data-aos="fade-right" data-aos-duration="2500">
                     Full Stack Development
                 </h4>
-                <p className={style.message}>
+                <p className={style.message} data-aos="fade-right" data-aos-duration="3000">
                     { t('inicio.txt_2') }
                 </p>
                 <div className={style.buttons}>

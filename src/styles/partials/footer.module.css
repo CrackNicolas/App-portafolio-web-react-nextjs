@@ -20,6 +20,10 @@
     height: 60px;
     color: var(--color-text-primary);
 }
+.container .description .icon ion-icon:hover{
+    cursor: pointer;
+    color: var(--color-text-secondary);
+}
 .container .description .icon ion-icon::before, .container .description .icon ion-icon::after{
     position: absolute;
     content: '';

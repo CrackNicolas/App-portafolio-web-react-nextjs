@@ -85,7 +85,7 @@
 .buttons a:hover ion-icon{
     transition-timing-function: ease-in-out;
     animation: animation_icon 1s linear infinite;
-} 
+}
 @keyframes animation_icon{
     0%{
         transform: translateY(0px);
@@ -94,7 +94,6 @@
         transform: translateY(-5px);
     }
 }
-
 @media (max-width : 975px) {
     .container{
         display: grid;
