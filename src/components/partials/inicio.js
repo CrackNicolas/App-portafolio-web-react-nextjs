@@ -4,6 +4,8 @@ import style from '../../styles/partials/inicio.module.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 
+const env = process.env.NODE_ENV
+
 export default React.forwardRef(function ComponentInicio(props,ref){
     const {t} = useTranslation();
 
@@ -12,6 +14,7 @@ export default React.forwardRef(function ComponentInicio(props,ref){
             <article className={style.description}>
                 <h2 className={style.hello} data-aos="fade-right" data-aos-duration="1500">
                     { t('inicio.txt_1') }
+                    {(env.NODE_ENV === 'development')? "Hola" : "none"}
                 </h2>
                 <h1 className={style.name} data-aos="fade-right" data-aos-duration="2000">
                     Alejo Beltran
