@@ -19,13 +19,15 @@ export default React.forwardRef(function ComponentPortfolio(props,ref){
     return (
         <section ref={ref.portfolio} id="portfolio" className={style.container}>
             <h2 className={style.title}>
-                <span>{ t('portfolio.title') }</span>
-                <ion-icon name="briefcase-outline"></ion-icon>
+                <span data-aos="fade-right" data-aos-duration="2000">
+                    { t('portfolio.title') }
+                </span>
+                <ion-icon name="briefcase-outline" data-aos="fade-left" data-aos-duration="2000"></ion-icon>
             </h2>
-            <h3 className={style.subtitle}>
+            <h3 className={style.subtitle} data-aos="fade-right" data-aos-duration="2500">
                 { t('portfolio.subtitle') }
             </h3>
-            <article className={style.proyect} ref={proyects}>
+            <article className={style.proyect} ref={proyects} data-aos="fade-up" data-aos-duration="2000">
                 <div className={style.card}>
                     <img src="/images/youtube.png"/>
                     <div className={style.description}>
@@ -165,14 +167,16 @@ export default React.forwardRef(function ComponentPortfolio(props,ref){
                     </div>
                 </div>
             </article>
-            <button onClick={() => view_proyects()}>
+            <button onClick={() => view_proyects()} data-aos="fade-up" data-aos-duration="3000">
                 <span>{ t(name_button) }</span>
                 <ion-icon name={(name_button == "button_view.txt_1")? "chevron-down-outline" : "chevron-up-outline" }></ion-icon>
             </button>
             <article className={style.experiencia}>
                 <div>
-                    <h3>{ t('portfolio.experience.title') }</h3>
-                    <p>
+                    <h3 data-aos="fade-right" data-aos-duration="2000">
+                        { t('portfolio.experience.title') }
+                    </h3>
+                    <p data-aos="fade-up" data-aos-duration="2500">
                         { t('portfolio.experience.data.txt_1') }
                         <br/><br/>
                         { t('portfolio.experience.data.txt_2') }
@@ -181,7 +185,7 @@ export default React.forwardRef(function ComponentPortfolio(props,ref){
                     </p>
                 </div>
                 <div>
-                    <Link to="contactar" spy={true} smooth={true} offset={0} duration={500}>
+                    <Link to="contactar" spy={true} smooth={true} offset={0} duration={500} data-aos="fade-left" data-aos-duration="3000">
                         <ion-icon name="mail-outline"></ion-icon>
                         <span>
                             { t('inicio.txt_3') }
@@ -190,7 +194,7 @@ export default React.forwardRef(function ComponentPortfolio(props,ref){
                 </div>
             </article>
             <article className={style.data}>
-                <div className={style.item}>
+                <div className={style.item} data-aos="fade-down" data-aos-duration="3000">
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                     <p>
                         <span>50+</span>
@@ -199,7 +203,7 @@ export default React.forwardRef(function ComponentPortfolio(props,ref){
                         </span>
                     </p>
                 </div>
-                <div className={style.item}>
+                <div className={style.item} data-aos="fade-down" data-aos-duration="2500">
                     <ion-icon name="happy-outline"></ion-icon>
                     <p>
                         <span>43</span>
@@ -208,7 +212,7 @@ export default React.forwardRef(function ComponentPortfolio(props,ref){
                         </span>
                     </p>
                 </div>
-                <div className={style.item}>
+                <div className={style.item} data-aos="fade-down" data-aos-duration="2000">
                     <ion-icon name="flash-outline"></ion-icon>
                     <p>
                         <span>4</span>
@@ -217,7 +221,7 @@ export default React.forwardRef(function ComponentPortfolio(props,ref){
                         </span>
                     </p>
                 </div>
-                <div className={style.item}>
+                <div className={style.item} data-aos="fade-down" data-aos-duration="1500">
                     <ion-icon name="body-outline"></ion-icon>
                     <p>
                         <span>4</span>

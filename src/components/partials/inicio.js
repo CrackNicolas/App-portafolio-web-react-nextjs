@@ -23,18 +23,18 @@ export default React.forwardRef(function ComponentInicio(props,ref){
                     { t('inicio.txt_2') }
                 </p>
                 <div className={style.buttons}>
-                    <Link to="contactar" spy={true} smooth={true} offset={0} duration={500}>
+                    <Link to="contactar" spy={true} smooth={true} offset={0} duration={500} data-aos="fade-right" data-aos-duration="3000">
                         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                         <span>{ t('inicio.txt_3') }</span>
                     </Link>
-                    <a href="http://localhost:3000/pdf/Curriculum Beltran Alejo.pdf" download="Curriculum Beltran Alejo.pdf">
+                    <a href="http://localhost:3000/pdf/Curriculum Beltran Alejo.pdf" download="Curriculum Beltran Alejo.pdf" data-aos="fade-left" data-aos-duration="3000">
                         <ion-icon name="document-text-outline"></ion-icon>
                         <span>{ t('inicio.txt_4') }</span>
                     </a>
                 </div>
             </article>
             <article className={style.perfil}>
-                <img src="/images/perfil.jpg"/>
+                <img src="/images/perfil.jpg" data-aos="fade-left" data-aos-duration="3000"/>
             </article>
         </section>
     )

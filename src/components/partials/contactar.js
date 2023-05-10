@@ -70,11 +70,15 @@ export default React.forwardRef(function ComponentContactar(props,ref){
     return (
         <section ref={ref.contactar} id="contactar" className={style.container}>
             <h2 className={style.title}>
-                <span>{ t('inicio.txt_3') }</span>
-                <ion-icon name="mail-outline"></ion-icon>
+                <span data-aos="fade-right" data-aos-duration="2000">
+                    { t('inicio.txt_3') }
+                </span>
+                <ion-icon name="mail-outline" data-aos="fade-left" data-aos-duration="2000"></ion-icon>
             </h2>
             <article className={style.form}>
-                <h2> { t('contact.subtitle') } </h2>
+                <h2 data-aos="fade-down" data-aos-duration="2500"> 
+                    { t('contact.subtitle') } 
+                </h2>
                 <form action="" method="POST" ref={ref_form} onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <div className={style.content_input}>

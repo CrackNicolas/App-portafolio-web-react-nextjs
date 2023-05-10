@@ -11,21 +11,21 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
 
     return (
         <section ref={ref.sobre_mi} id="sobre-mi" className={style.container}>
-            <h2 data-aos="fade-right" className={style.title}>
-                <span>
+            <h2 className={style.title}>
+                <span data-aos="fade-right" data-aos-duration="2000">
                     { t('sobre-mi.title') }
                 </span>
-                <ion-icon name="person-outline"></ion-icon>
+                <ion-icon name="person-outline" data-aos="fade-left" data-aos-duration="2000"></ion-icon>
             </h2>
-            <h4 className={style.contratan}>
+            <h4 className={style.contratan} data-aos="fade-right" data-aos-duration="2500">
                 { t('sobre-mi.subtitle') }
             </h4>
-            <p className={style.description}>
+            <p className={style.description} data-aos="fade-right" data-aos-duration="3000">
                 { t('sobre-mi.description.line_1') }
                 <br/>
                 { t('sobre-mi.description.line_2') }
             </p>
-            <article className={style.habilidades}>
+            <article className={style.habilidades} data-aos="fade-up" data-aos-duration="2000">
                 <div className={style.porcentaje} style={{"--number-porcentaje":100}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
