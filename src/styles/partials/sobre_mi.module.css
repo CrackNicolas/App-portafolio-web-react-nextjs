@@ -211,6 +211,7 @@
         width: 15px;
         height: 15px;
     }
+    /*
     .porcentaje{
         width: 70px;
         height: 70px;
@@ -232,7 +233,7 @@
         width: 7px;
         height: 7px;
     }
-    /**crititico*/
+    /**crititico
     .porcentaje .svg circle{
         stroke: red;
         stroke-dasharray: 190;
@@ -242,7 +243,7 @@
         stroke-width: 1.5;
         background-color: blue;
     }
-    /**--------------------*/
+    --------------------*/
 }
 @media (max-width : 410px){
     .container{
