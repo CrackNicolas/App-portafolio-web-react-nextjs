@@ -29,18 +29,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":100}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx={is_mobile? "30":"50"} cy={is_mobile? "30":"50"} r={is_mobile? "30":"50"}></circle>
+                        <circle cx={is_mobile? "30":"50"} cy={is_mobile? "30":"50"} r={is_mobile? "30":"50"}></circle>
                     </svg>
                     <div className={style.number}>
                         <i className={style.bootstrap+" bx bxl-bootstrap bx-"+((is_mobile)? "xs" : "md")}></i>
