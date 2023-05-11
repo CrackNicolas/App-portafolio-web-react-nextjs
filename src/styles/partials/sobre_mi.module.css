@@ -233,7 +233,7 @@
         height: 7px;
     }
     /**crititico*/
-    .porcentaje .svg circle:nth-child(2){
+    .porcentaje .svg circle{
         stroke: red;
         stroke-dasharray: 190;
         stroke-dashoffset: calc(190 - (190 * var(--number-porcentaje)) / 100);
