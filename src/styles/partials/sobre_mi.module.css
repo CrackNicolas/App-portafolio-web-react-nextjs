@@ -204,9 +204,6 @@
         width: 20px;
         height: 20px;
     }
-}
-/*
-@media (max-width : 575px){
     .container .habilidades{
         grid-gap: 1px;
     }
@@ -214,6 +211,18 @@
         width: 15px;
         height: 15px;
     }
+    .porcentaje{
+        width: 70px;
+        height: 70px;
+    }
+    .porcentaje .svg{
+        width: 70px;
+        height: 70px;
+        transform: rotate(270deg);
+    }
+}
+/*
+@media (max-width : 575px){
     .porcentaje{
         width: 70px;
         height: 70px;
