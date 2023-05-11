@@ -220,18 +220,16 @@
         height: 70px;
         transform: rotate(270deg);
     }
+    .number h2{
+        font-size: 13px;
+    }
+    .number p{
+        font-size: 8px;
+        letter-spacing: 0.6px;
+    }
 }
 /*
 @media (max-width : 575px){
-    .porcentaje{
-        width: 70px;
-        height: 70px;
-    }
-    .porcentaje .svg{
-        width: 70px;
-        height: 70px;
-        transform: rotate(270deg);
-    }
     .porcentaje .svg circle:nth-child(2){
         stroke-dasharray: 190;
         stroke-dashoffset: calc(190 - (190 * var(--number-porcentaje)) / 100);
@@ -239,13 +237,6 @@
     .porcentaje .svg circle{
         stroke-width: 1.5;
         background-color: blue;
-    }
-    .number h2{
-        font-size: 13px;
-    }
-    .number p{
-        font-size: 8px;
-        letter-spacing: 0.6px;
     }
     .dot::before{
         top: -3.5px;
