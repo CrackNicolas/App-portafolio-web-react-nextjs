@@ -68,7 +68,7 @@
     stroke: gray;
     transform: translate(5px, 5px);
 }
-.porcentaje .svg circle{
+.porcentaje .svg circle:nth-child(2){
     stroke: var(--color-text-secondary);
     stroke-dasharray: 310;
     stroke-dashoffset: calc(310 - (310 * var(--number-porcentaje)) / 100);
@@ -80,7 +80,7 @@
 .porcentaje .dot:hover ~ .svg{
     background-color: var(--color-text-secondary);
 }
-.porcentaje .dot:hover ~ .number img, .porcentaje .dot:hover ~ .number i{
+.porcentaje .dot:hover ~ img, .porcentaje .dot:hover ~ .number i{
     transition-timing-function: ease-in-out;
     transform: translateY(-2px);
 }
@@ -233,14 +233,15 @@
         height: 7px;
     }
     /**crititico*/
-    /*.porcentaje .svg circle:nth-child(2){
+    .porcentaje .svg circle:nth-child(2){
+        stroke: red;
         stroke-dasharray: 190;
         stroke-dashoffset: calc(190 - (190 * var(--number-porcentaje)) / 100);
     }
     .porcentaje .svg circle{
         stroke-width: 1.5;
         background-color: blue;
-    }*/
+    }
     /**--------------------*/
 }
 @media (max-width : 410px){
