@@ -93,7 +93,7 @@
     border-radius: 30px;
 }
 .container .habilidades:hover .habilidad .bar::before{
-    animation: animate_skill 2s linear;
+    animation: animate_skill 1s linear;
 }
 @keyframes animate_skill{
     0%{
