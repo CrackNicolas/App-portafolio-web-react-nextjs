@@ -73,7 +73,7 @@
     stroke-dasharray: 310;
     stroke-dashoffset: calc(310 - (310 * var(--number-porcentaje)) / 100);
 }
-.porcentaje .dot:hover{
+.porcentaje .dot::before:hover{
     cursor: pointer;
     animation: animate_skill 2s linear;
 }
