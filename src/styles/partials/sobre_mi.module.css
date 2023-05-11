@@ -68,7 +68,7 @@
     stroke: gray;
     transform: translate(5px, 5px);
 }
-.porcentaje .svg circle:nth-child(2){
+.porcentaje .svg circle{
     stroke: var(--color-text-secondary);
     stroke-dasharray: 310;
     stroke-dashoffset: calc(310 - (310 * var(--number-porcentaje)) / 100);
@@ -80,7 +80,7 @@
 .porcentaje .dot:hover ~ .svg{
     background-color: var(--color-text-secondary);
 }
-.porcentaje .dot:hover ~ .number ion-icon, .porcentaje .dot:hover ~ .number i{
+.porcentaje .dot:hover ~ .number img, .porcentaje .dot:hover ~ .number i{
     transition-timing-function: ease-in-out;
     transform: translateY(-2px);
 }
@@ -90,12 +90,10 @@
     transform: translateY(-2px);
 }
 .porcentaje .dot:hover ~ .svg circle{
-    stroke: blue;
-    /*stroke: var(--color-font-primary);*/
+    stroke: var(--color-font-primary);
 }
 .porcentaje .dot:hover::before{
-    background-color: red;
-    /*background-color: var(--color-font-primary);*/
+    background-color: var(--color-font-primary);
 }
 .dot{
     position: absolute;
