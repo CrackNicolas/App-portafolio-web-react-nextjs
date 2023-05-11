@@ -1,4 +1,4 @@
-const env = process.env.NODE_ENV;
+//const env = process.env.NODE_ENV;
 
 //export const key_recaptcha = (env == "development")? "6LfoLOklAAAAAMZ0rM3pBfmzxa6Kj47b5EIvA45C" : (env == "production")? "" : "";
 export const key_recaptcha = "6LfoLOklAAAAAMZ0rM3pBfmzxa6Kj47b5EIvA45C";
