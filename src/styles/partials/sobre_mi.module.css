@@ -90,10 +90,12 @@
     transform: translateY(-2px);
 }
 .porcentaje .dot:hover ~ .svg circle{
-    stroke: red;
+    stroke: blue;
+    /*stroke: var(--color-font-primary);*/
 }
 .porcentaje .dot:hover::before{
-    background-color: var(--color-font-primary);
+    background-color: red;
+    /*background-color: var(--color-font-primary);*/
 }
 .dot{
     position: absolute;
