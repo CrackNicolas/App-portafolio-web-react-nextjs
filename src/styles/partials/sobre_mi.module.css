@@ -233,14 +233,14 @@
         height: 7px;
     }
     /**crititico*/
-    .porcentaje .svg circle:nth-child(2){
+    /*.porcentaje .svg circle:nth-child(2){
         stroke-dasharray: 190;
         stroke-dashoffset: calc(190 - (190 * var(--number-porcentaje)) / 100);
     }
     .porcentaje .svg circle{
         stroke-width: 1.5;
         background-color: blue;
-    }
+    }*/
     /**--------------------*/
 }
 @media (max-width : 410px){
