@@ -26,305 +26,185 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 { t('sobre-mi.description.line_2') }
             </p>
             <article className={style.habilidades} data-aos="fade-up" data-aos-duration="2000">
-                <div className={style.porcentaje} style={{"--number-porcentaje":100}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
-                        <i className={style.bootstrap+" bx bxl-bootstrap bx-"+((is_mobile)? "xs" : "md")}></i>
-                        <h2>
-                            100
-                            <span>%</span>
-                        </h2>
-                        <p>Bootstrap</p>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "100%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Bootstrap
+                        </span>
+                        <i className={style.bootstrap+" bx bxl-bootstrap bx-"+((is_mobile)? "xs" : "sm")}></i>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            MySql
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/mysql-logo.png"/>
-                        <h2>
-                            90
-                            <span>%</span>
-                        </h2>
-                        <p>MySql</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
-                        <i className={style.react+" bx bxl-react bx-"+((is_mobile)? "xs" : "md")}></i>
-                        <h2>
-                            90
-                            <span>%</span>
-                        </h2>
-                        <p>React</p>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            React
+                        </span>
+                        <i className={style.react+" bx bxl-react bx-sm"}></i>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "80%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Java
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/java-coffee-cup-logo.png"/>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>Java</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Angular
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/angularjs.png"/>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>Angular</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "80%"}}>
+                    <div className={style.name}>
+                        <span>
+                            TypeScript
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"/>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>TypeScript</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            CSS
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/css3.png"/>
-                        <h2>
-                            90
-                            <span>%</span>
-                        </h2>
-                        <p>CSS</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            HTML
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/html-5.png"/>
-                        <h2>
-                            90
-                            <span>%</span>
-                        </h2>
-                        <p>HTML</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "80%"}}>
+                    <div className={style.name}>
+                        <span>
+                            PHP
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/php.png"/>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>PHP</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            npm
+                        </span>
                         <img src="/images/npm.png"/>
-                        <h2>
-                            90
-                            <span>%</span>
-                        </h2>
-                        <p>npm</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Node.js
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/node-js.png"/>
-                        <h2>
-                            90
-                            <span>%</span>
-                        </h2>
-                        <p>Node.js</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "90%"}}>
+                    <div className={style.name}>
+                        <span>
+                            JavaScript
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/javascript.png"/>
-                        <h2>
-                            90
-                            <span>%</span>
-                        </h2>
-                        <p>JavaScript</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "80%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Tailwind
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/tailwind_css.png"/>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>Tailwind</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "70%"}}>
+                    <div className={style.name}>
+                        <span>
+                            C/C++
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"/>
-                        <h2>
-                            70
-                            <span>%</span>
-                        </h2>
-                        <p>C/C++</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
-                        <i className={style.mongodb+" bx bxl-mongodb bx-"+((is_mobile)? "xs" : "md")}></i>
-                        <h2>
-                            70
-                            <span>%</span>
-                        </h2>
-                        <p>MongoDB</p>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "70%"}}>
+                    <div className={style.name}>
+                        <span>
+                            MongoDB
+                        </span>
+                        <i className={style.mongodb+" bx bxl-mongodb bx-sm"}></i>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
-                        <i className={style.jquery+" bx bxl-jquery bx-"+((is_mobile)? "xs" : "md")}></i>
-                        <h2>
-                            70
-                            <span>%</span>
-                        </h2>
-                        <p>jQuery</p>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "70%"}}>
+                    <div className={style.name}>
+                        <span>
+                            jQuery
+                        </span>
+                        <i className={style.jquery+" bx bxl-jquery bx-sm"}></i>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":60}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "50%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Arduino
+                        </span>
                         <img src="https://img.icons8.com/fluency/48/null/arduino.png"/>
-                        <h2>
-                            60
-                            <span>%</span>
-                        </h2>
-                        <p>Arduino</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "80%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Next.js
+                        </span>
                         <img src="/images/next.png"/>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>Next.js</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "80%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Jira
+                        </span>
                         <img className={style.jira} src="/images/jira.png"/>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>Jira</p>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
-                <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
-                    <div className={style.dot}></div>
-                    <svg className={style.svg}>
-                        <circle cx="50" cy="50" r="50"></circle>
-                        <circle cx="50" cy="50" r="50"></circle>
-                    </svg>
-                    <div className={style.number}>
-                        <i className={style.trello+" lab la-trello bx-"+((is_mobile)? "xs" : "md")}></i>
-                        <h2>
-                            80
-                            <span>%</span>
-                        </h2>
-                        <p>Trello</p>
+                <div className={style.habilidad} style={{"--number-porcentaje" : "80%"}}>
+                    <div className={style.name}>
+                        <span>
+                            Trello
+                        </span>
+                        <i className={style.trello+" lab la-trello bx-sm"}></i>
                     </div>
+                    <div className={style.bar}></div>
                 </div>
             </article>
         </section>

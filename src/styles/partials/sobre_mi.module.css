@@ -35,143 +35,73 @@
 .container .description{
     font-size: 20px;
     opacity: 0.7;
-}
-.container .habilidades{
-    padding: 25px 0px;
+    margin-bottom: 20px;
 }
 .container .habilidades{
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px 20px;
     justify-items: center;
     align-items: center;
 }
-.porcentaje{
-    position: relative;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-}
-.porcentaje .svg{
-    border-radius: 50%;
-    position: relative;
-    width: 110px;
-    height: 110px;
-    transform: rotate(270deg);
-}
-.porcentaje .svg circle{
+.container .habilidades .habilidad{
     width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke-width: 3;
-    stroke: gray;
-    transform: translate(5px, 5px);
 }
-.porcentaje .svg circle:nth-child(2){
-    stroke: var(--color-text-secondary);
-    stroke-dasharray: 310;
-    stroke-dashoffset: calc(310 - (310 * var(--number-porcentaje)) / 100);
+.container .habilidades .habilidad .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
 }
-.porcentaje .dot::before:hover{
-    cursor: pointer;
-    animation: animate_skill 2s linear;
+.container .habilidades .habilidad .name span{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
 }
-.porcentaje .dot:hover ~ .svg{
-    background-color: var(--color-text-secondary);
+.container .habilidades .habilidad .name img{
+    width: 25px;
+    height: 25px;
 }
-.porcentaje .dot:hover ~ img, .porcentaje .dot:hover ~ .number i{
-    transition-timing-function: ease-in-out;
-    transform: translateY(-2px);
+.container .habilidades .habilidad .name .bootstrap{
+    color: purple;
 }
-.porcentaje .dot:hover ~ .number p, .porcentaje .dot:hover ~ .number h2{
-    color: var(--color-font-primary);
-    transition-timing-function: ease-in-out;
-    transform: translateY(-2px);
+.container .habilidades .habilidad .name .react{
+    color:rgb(11, 212, 212);
 }
-.porcentaje .dot:hover ~ .svg circle{
-    stroke: var(--color-font-primary);
+.container .habilidades .habilidad .name .jira{
+    transform: rotate(50grad);
 }
-.porcentaje .dot:hover::before{
-    background-color: var(--color-font-primary);
+.container .habilidades .habilidad .name .trello, .container .habilidades .habilidad .name .jquery{
+    color: #007AD9;
 }
-.dot{
+.container .habilidades .habilidad .name .mongodb{
+    color: green;
+}
+.container .habilidades .habilidad .bar{
+    background-color: rgba(106, 103, 103, 0.235);
+    height: 8px;
+    border-radius: 30px;
+    position: relative;
+}
+.container .habilidades .habilidad .bar::before{
     position: absolute;
-    inset: 5px;
-    z-index: 10;
-    transform: rotate(calc(3.6deg * var(--number-porcentaje)));
+    content: '';
+    background-color: var(--color-text-secondary);
+    width: var(--number-porcentaje);
+    height: 8px;
+    border-radius: 30px;
 }
-@keyframes animate_title{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
+.container .habilidades:hover .habilidad .bar::before{
+    animation: animate_skill 2s linear;
 }
 @keyframes animate_skill{
     0%{
-        transform: rotate(0deg);
+        width: 0%;
     }
     100%{
-        transform: rotate(calc(3.6deg * var(--number-porcentaje)));
+        width: var(--number-porcentaje);
     }
-}
-.dot::before{
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 11px;
-    height: 11px;
-    background-color: var(--color-text-secondary);;
-    border-radius: 50%;
-}
-.number{
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: var(--color-text-secondary);
-    margin-top: -3px;
-}
-.number i{
-    transition-duration: 700ms;
-}
-.number img{
-    width: 35px;
-    height: 35px;
-}
-.number .react{
-    color:rgb(11, 212, 212);
-}
-.number .jira{
-    transform: rotate(50grad);
-}
-.number .trello, .number .jquery{
-    color: #007AD9;
-}
-.number .mongodb{
-    color: green;
-}
-.number h2{
-    font-size: 18px;
-    transition-duration: 700ms;
-}
-.number p{
-    color: var(--color-text-secondary);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11.7px;
-    letter-spacing: 1px;
-    transition-duration: 700ms;
-}
-.number .bootstrap{
-    color: purple;
 }
 @media (max-width : 615px){
     .container .contratan{
@@ -182,16 +112,13 @@
     .container .description{
         font-size: 17px;
     }
-    .container .habilidades{
-        margin-bottom: 50px;
-    } 
 }
 @media (max-width : 575px){
     .container{
         padding: 20px 40px 0px 80px;
     }
     .container .habilidades{
-        grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+        grid-template-columns: 1fr 1fr;
     } 
     .container .contratan{
         font-size: 22px;
@@ -204,46 +131,6 @@
         width: 20px;
         height: 20px;
     }
-    .container .habilidades{
-        grid-gap: 1px;
-    }
-    .number img{
-        width: 15px;
-        height: 15px;
-    }
-    /*
-    .porcentaje{
-        width: 70px;
-        height: 70px;
-    }
-    .porcentaje .svg{
-        width: 70px;
-        height: 70px;
-        transform: rotate(270deg);
-    }
-    .number h2{
-        font-size: 13px;
-    }
-    .number p{
-        font-size: 8px;
-        letter-spacing: 0.6px;
-    }
-    .dot::before{
-        top: -3.5px;
-        width: 7px;
-        height: 7px;
-    }
-    /**crititico
-    .porcentaje .svg circle{
-        stroke: red;
-        stroke-dasharray: 190;
-        stroke-dashoffset: calc(190 - (190 * var(--number-porcentaje)) / 100);
-    }
-    .porcentaje .svg circle{
-        stroke-width: 1.5;
-        background-color: blue;
-    }
-    --------------------*/
 }
 @media (max-width : 410px){
     .container{
@@ -260,8 +147,8 @@
         font-size: 14px;
     }
     .container .habilidades{
-        padding: 10px 0px;
-    }
+        grid-template-columns: 1fr;
+    } 
 }
 @media (max-width : 334px){
     .container .contratan{
