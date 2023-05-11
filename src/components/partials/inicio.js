@@ -12,7 +12,6 @@ export default React.forwardRef(function ComponentInicio(props,ref){
             <article className={style.description}>
                 <h2 className={style.hello} data-aos="fade-right" data-aos-duration="1500">
                     { t('inicio.txt_1') }
-                    {process.env.NODE_ENV}
                 </h2>
                 <h1 className={style.name} data-aos="fade-right" data-aos-duration="2000">
                     Alejo Beltran
