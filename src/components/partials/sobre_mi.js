@@ -44,18 +44,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/mysql-logo.png"/>
@@ -69,18 +59,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <i className={style.react+" bx bxl-react bx-"+((is_mobile)? "xs" : "md")}></i>
@@ -94,18 +74,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/java-coffee-cup-logo.png"/>
@@ -119,18 +89,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/angularjs.png"/>
@@ -144,18 +104,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"/>
@@ -169,18 +119,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/css3.png"/>
@@ -194,18 +134,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/html-5.png"/>
@@ -219,18 +149,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/php.png"/>
@@ -244,18 +164,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="/images/npm.png"/>
@@ -269,18 +179,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/node-js.png"/>
@@ -294,18 +194,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":90}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/javascript.png"/>
@@ -319,18 +209,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/tailwind_css.png"/>
@@ -344,18 +224,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"/>
@@ -369,18 +239,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <i className={style.mongodb+" bx bxl-mongodb bx-"+((is_mobile)? "xs" : "md")}></i>
@@ -394,18 +254,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":70}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <i className={style.jquery+" bx bxl-jquery bx-"+((is_mobile)? "xs" : "md")}></i>
@@ -419,18 +269,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":60}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="https://img.icons8.com/fluency/48/null/arduino.png"/>
@@ -444,18 +284,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img src="/images/next.png"/>
@@ -469,18 +299,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <img className={style.jira} src="/images/jira.png"/>
@@ -494,18 +314,8 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                 <div className={style.porcentaje} style={{"--number-porcentaje":80}}>
                     <div className={style.dot}></div>
                     <svg className={style.svg}>
-                        {
-                            is_mobile? 
-                                <>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                    <circle cx="30" cy="30" r="30"></circle>
-                                </>
-                            :
-                                <>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </>
-                        }
+                        <circle cx="50" cy="50" r="50"></circle>
+                        <circle cx="50" cy="50" r="50"></circle>
                     </svg>
                     <div className={style.number}>
                         <i className={style.trello+" lab la-trello bx-"+((is_mobile)? "xs" : "md")}></i>

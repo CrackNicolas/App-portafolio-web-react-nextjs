@@ -173,7 +173,6 @@
 .number .bootstrap{
     color: purple;
 }
-/*
 @media (max-width : 615px){
     .container .contratan{
         font-size: 30px;
@@ -205,6 +204,9 @@
         width: 20px;
         height: 20px;
     }
+}
+/*
+@media (max-width : 575px){
     .container .habilidades{
         grid-gap: 1px;
     }
@@ -242,6 +244,7 @@
         height: 7px;
     }
 }
+*/
 @media (max-width : 410px){
     .container{
         padding: 20px 30px 0px 60px;
@@ -264,4 +267,4 @@
     .container .contratan{
         letter-spacing: 0.3px;
     }
-}*/
+}
