@@ -1,11 +1,9 @@
-import React from 'react';
-
 import { Link } from 'react-scroll';
 import style from '../../styles/partials/portfolio.module.css';
 import { useTranslation } from 'react-i18next';
-import { useRef, useState } from 'react';
+import { useRef, useState, forwardRef } from 'react';
 
-export default React.forwardRef(function ComponentPortfolio(props,ref){
+export default forwardRef(function ComponentPortfolio(props,ref){
     const {t} = useTranslation();
     
     const [name_button,setName_button] = useState("button_view.txt_1");

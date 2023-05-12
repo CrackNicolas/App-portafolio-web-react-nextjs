@@ -1,13 +1,10 @@
-import React from 'react';
+import {forwardRef} from 'react';
 
-import { useMediaQuery } from 'react-responsive'
 import { useTranslation } from 'react-i18next';
 import style from '../../styles/partials/sobre_mi.module.css';
 
-export default React.forwardRef(function ComponentSobreMi(props,ref){
+export default forwardRef(function ComponentSobreMi(props,ref){
     const {t} = useTranslation();
-
-    const is_mobile = useMediaQuery({ query: '(max-width: 575px)' });
 
     return (
         <section ref={ref.sobre_mi} id="sobre-mi" className={style.container}>

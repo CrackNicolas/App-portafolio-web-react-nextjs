@@ -1,10 +1,8 @@
-import React from 'react';
-
-import { useRef, useState } from 'react';
+import { useRef, useState, forwardRef } from 'react';
 import style from '../../styles/partials/educacion.module.css';
 import { useTranslation } from 'react-i18next';
 
-export default React.forwardRef(function ComponentEducacion(props,ref){
+export default forwardRef(function ComponentEducacion(props,ref){
     const {t} = useTranslation();
 
     const [name_button,setName_button] = useState("Ver más");

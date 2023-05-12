@@ -1,16 +1,14 @@
-import React from 'react';
-
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 
-import { useRef, useState } from "react";
+import { useRef, useState, forwardRef } from "react";
 import { useTranslation } from 'react-i18next';
 import { key_global_emailjs, key_service_emailjs, key_template_emaijs, key_recaptcha } from '../../config/credentials.js';
 
 import style from '../../styles/partials/contactar.module.css';
 import { useForm } from 'react-hook-form';
 
-export default React.forwardRef(function ComponentContactar(props,ref){
+export default forwardRef(function ComponentContactar(props,ref){
     const {t} = useTranslation();
     
     const {register, formState : { errors }, handleSubmit} = useForm();

@@ -1,9 +1,9 @@
-import React from 'react';
+import {forwardRef} from 'react';
 
 import style from '../../styles/partials/services.module.css';
 import { useTranslation } from 'react-i18next';
 
-export default React.forwardRef(function ComponentServices(props,ref){
+export default forwardRef(function ComponentServices(props,ref){
     const {t} = useTranslation();
 
     return (

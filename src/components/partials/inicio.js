@@ -1,10 +1,10 @@
-import React from 'react';
+import {forwardRef} from 'react';
 
 import style from '../../styles/partials/inicio.module.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 
-export default React.forwardRef(function ComponentInicio(props,ref){
+export default forwardRef(function ComponentInicio(props,ref){
     const {t} = useTranslation();
 
     return (

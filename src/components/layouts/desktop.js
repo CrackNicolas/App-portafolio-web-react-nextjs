@@ -1,4 +1,4 @@
-import React, { createRef } from "react";
+import {Fragment, createRef } from "react";
 
 import ComponentIntro from "../partials/intro.js";
 import ComponentMenuLeft from "../partials/menu_left.js";
@@ -41,7 +41,7 @@ export default function ComponentIsDeskatop(){
     })
 
     return (
-        <React.Fragment>
+        <Fragment>
             <ComponentIntro/>
             <section>
                 <ComponentMenuLeft inicio={ref_inicio} sobre_mi={ref_sobre_mi} services={ref_services} portfolio={ref_portfolio} educacion={ref_educacion} contactar={ref_contactar}/>
@@ -54,6 +54,6 @@ export default function ComponentIsDeskatop(){
                 <ComponentFooter/>
                 <ComponentRedesSociales/>
             </section>
-        </React.Fragment>
+        </Fragment>
     )
 }
