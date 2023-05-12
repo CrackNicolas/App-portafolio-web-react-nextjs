@@ -26,7 +26,7 @@ export default function ComponentIntro(){
     return (
         <section ref={ref_intro} className={style.intro}>
             <article className={style.description}>
-                <img src="/images/logo.png"/>
+                <img src="/images/logo.png" data-aos="fade-down" data-aos-duration="1000"/>
                 <h1 ref={ref_logo} className={style.logo}>
                     <span className={style.logo_parts}>F</span>
                     <span className={style.logo_parts}>U</span>
@@ -39,7 +39,9 @@ export default function ComponentIntro(){
                     <span className={style.logo_parts}>C</span>
                     <span className={style.logo_parts}>K</span>
                 </h1>
-                <p>Development</p>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    Development
+                </p>
             </article>
         </section>
     )
