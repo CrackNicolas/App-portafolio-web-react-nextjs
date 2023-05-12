@@ -12,7 +12,7 @@ export default function ComponentIntro(){
                 setTimeout(() => {
                     span.style.bottom = "0";
                     span.style.opacity = "1";
-                    span.style.transition = "ease-in-out .5s";
+                    span.style.transition = "ease-in-out 0.5s";
                 },(index + 1) * 100);
                 index++;
             }  
