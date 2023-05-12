@@ -105,7 +105,7 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     </div>
                 </div>
                 <div className={style.card}>
-                    <img src="/images/Clasical_model.png"/>
+                    <img src="/images/Clasical_model.jpg"/>
                     <div className={style.description}>
                         <p>
                             { t('portfolio.proyects.p_6.data') }
