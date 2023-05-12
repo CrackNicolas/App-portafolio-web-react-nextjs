@@ -26,7 +26,7 @@ export default function ComponentIntro(){
     return (
         <section ref={ref_intro} className={style.intro}>
             <article className={style.description}>
-                <img src="/images/logo.png" data-aos="fade-down" data-aos-duration="1000"/>
+                <img src="../../../public/images/Logo.png" data-aos="fade-down" data-aos-duration="1000"/>
                 <h1 ref={ref_logo} className={style.logo}>
                     <span className={style.logo_parts}>F</span>
                     <span className={style.logo_parts}>U</span>
