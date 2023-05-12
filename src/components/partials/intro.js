@@ -25,20 +25,22 @@ export default function ComponentIntro(){
 
     return (
         <section ref={ref_intro} className={style.intro}>
-            <img src="/images/logo.png"/>
-            <h1 ref={ref_logo} className={style.logo}>
-                <span className={style.logo_parts}>F</span>
-                <span className={style.logo_parts}>U</span>
-                <span className={style.logo_parts}>L</span>
-                <span className={style.logo_parts}>L</span>
-                <span className={style.logo_parts}>&nbsp;</span>
-                <span className={style.logo_parts}>S</span>
-                <span className={style.logo_parts}>T</span>
-                <span className={style.logo_parts}>A</span>
-                <span className={style.logo_parts}>C</span>
-                <span className={style.logo_parts}>K</span>
-            </h1>
-            <p>Development</p>
+            <article className={style.description}>
+                <img src="/images/logo.png"/>
+                <h1 ref={ref_logo} className={style.logo}>
+                    <span className={style.logo_parts}>F</span>
+                    <span className={style.logo_parts}>U</span>
+                    <span className={style.logo_parts}>L</span>
+                    <span className={style.logo_parts}>L</span>
+                    <span className={style.logo_parts}>&nbsp;</span>
+                    <span className={style.logo_parts}>S</span>
+                    <span className={style.logo_parts}>T</span>
+                    <span className={style.logo_parts}>A</span>
+                    <span className={style.logo_parts}>C</span>
+                    <span className={style.logo_parts}>K</span>
+                </h1>
+                <p>Development</p>
+            </article>
         </section>
     )
 }
