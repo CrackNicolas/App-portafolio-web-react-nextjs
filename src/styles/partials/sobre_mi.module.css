@@ -112,6 +112,9 @@
     .container .description{
         font-size: 17px;
     }
+    .container .habilidades .habilidad .bar, .container .habilidades .habilidad .bar::before{
+        height: 6px;
+    }
 }
 @media (max-width : 575px){
     .container{

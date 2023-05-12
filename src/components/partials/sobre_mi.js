@@ -31,7 +31,7 @@ export default React.forwardRef(function ComponentSobreMi(props,ref){
                         <span>
                             Bootstrap
                         </span>
-                        <i className={style.bootstrap+" bx bxl-bootstrap bx-"+((is_mobile)? "xs" : "sm")}></i>
+                        <i className={style.bootstrap+" bx bxl-bootstrap bx-sm"}></i>
                     </div>
                     <div className={style.bar}></div>
                 </div>
