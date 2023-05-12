@@ -13,9 +13,9 @@
     transition: 1s;
 }
 .intro img{
-    width: 100px;
-    height: 100px;
-    top: 0px;
+    width: 200px;
+    height: 200px;
+    top: 55px;
     position: absolute;
 }
 .intro p{
