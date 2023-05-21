@@ -45,12 +45,30 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     </div>
                 </div>
                 <div className={style.card}>
-                    <img src="/images/pinterest.png"/>
+                    <img src="/images/Comidas_lo_mejor.png"/>
                     <div className={style.description}>
                         <p>
                             { t('portfolio.proyects.p_2.data') }
                             <br/>
                             { t('portfolio.proyects.p_2.tecnologias') }
+                        </p>
+                        <p>
+                            <a target="_blank" href="https://github.com/CrackAlejo/App-venta-online-react">
+                                <ion-icon name="git-branch-outline"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://app-venta-online-react.vercel.app/">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div className={style.card}>
+                    <img src="/images/pinterest.png"/>
+                    <div className={style.description}>
+                        <p>
+                            { t('portfolio.proyects.p_3.data') }
+                            <br/>
+                            { t('portfolio.proyects.p_3.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-pinterest-express.js">
@@ -63,9 +81,9 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     <img src="/images/quizz.png"/>
                     <div className={style.description}>
                         <p>
-                            { t('portfolio.proyects.p_3.data') }
+                            { t('portfolio.proyects.p_4.data') }
                             <br/>
-                            { t('portfolio.proyects.p_3.tecnologias') }
+                            { t('portfolio.proyects.p_4.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-stack-usuarios-php">
@@ -78,9 +96,9 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     <img src="/images/QA.png"/>
                     <div className={style.description}>
                         <p>
-                            { t('portfolio.proyects.p_4.data') }
+                            { t('portfolio.proyects.p_5.data') }
                             <br/>
-                            { t('portfolio.proyects.p_4.tecnologias') }
+                            { t('portfolio.proyects.p_5.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-control-de-calidad-calzados-express.js">
@@ -93,9 +111,9 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     <img src="/images/Parser.png"/>
                     <div className={style.description}>
                         <p>
-                            { t('portfolio.proyects.p_5.data') }
+                            { t('portfolio.proyects.p_6.data') }
                             <br/>
-                            { t('portfolio.proyects.p_5.tecnologias') }
+                            { t('portfolio.proyects.p_6.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-parser-mysql-java">
@@ -108,9 +126,9 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     <img src="/images/Clasical_model.jpg"/>
                     <div className={style.description}>
                         <p>
-                            { t('portfolio.proyects.p_6.data') }
+                            { t('portfolio.proyects.p_7.data') }
                             <br/>
-                            { t('portfolio.proyects.p_6.tecnologias') }
+                            { t('portfolio.proyects.p_7.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-clasicalmodels-java">
@@ -123,9 +141,9 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     <img src="/images/Juego_pong.png"/>
                     <div className={style.description}>
                         <p>
-                            { t('portfolio.proyects.p_7.data') }
+                            { t('portfolio.proyects.p_8.data') }
                             <br/>
-                            { t('portfolio.proyects.p_7.tecnologias') }
+                            { t('portfolio.proyects.p_8.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-juegopong-arduino">
@@ -138,9 +156,9 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     <img src="/images/Analizador_lexico.png"/>
                     <div className={style.description}>
                         <p>
-                            { t('portfolio.proyects.p_8.data') }
+                            { t('portfolio.proyects.p_9.data') }
                             <br/>
-                            { t('portfolio.proyects.p_8.tecnologias') }
+                            { t('portfolio.proyects.p_9.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-analizadoreslexicos-c">
@@ -153,9 +171,9 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     <img src="/images/editorial.png"/>
                     <div className={style.description}>
                         <p>
-                            { t('portfolio.proyects.p_9.data') }
+                            { t('portfolio.proyects.p_10.data') }
                             <br/>
-                            { t('portfolio.proyects.p_9.tecnologias') }
+                            { t('portfolio.proyects.p_10.tecnologias') }
                         </p>
                         <p>
                             <a target="_blank" href="https://github.com/CrackNicolas/App-editorialdelibros-c">

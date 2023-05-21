@@ -51,34 +51,38 @@
                 "tecnologias" : "Tecnologias utilizadas React, JavaScript, HTML5, CSS3."
             },
             "p_2" : {
+                "data" : "App web llamada Comidas lo mejor enfocada en la venta online de platos de comida.",
+                "tecnologias" : "Tecnologias utilizadas React, Framework Next.js, JavaScript, CSS3, HTML5."
+            },
+            "p_3" : {
                 "data" : "App web en donde se puede realizar la gestion de imagenes al estilo pinterest.",
                 "tecnologias" : "Tecnologias utilizadas JavaScript, Framework Express.js, MongoDB, Motor de plantillas EJS, Framework Bootstrap, CSS3, HTML5."
             },
-            "p_3" : {
+            "p_4" : {
                 "data" : "App web de administracion de usuarios, con seguridad para evitar ataques como XSS, CSRF, SQL INJECTION, CODE INJECTION, BRUTE FORCE ROBOTS tambien incluye SSL y el archivo .htaccess",
                 "tecnologias" : "Tecnologias utilizadas PHP implementacion de PDO, Framework Bootstrap, HTML5, CSS3, DB MySql, DB deploy con Clever cloud."
             },
-            "p_4" : {
+            "p_5" : {
                 "data" : "App web, fabrica de calzados con lineas de produccion y ordenes de produccion con modelo y color, estas estan supervisadas por 2 operadores, que realizan el control de calidad de los calzados.",
                 "tecnologias" : "Tecnologias utilizadas JavaScript, TypeScript, Framework Express.js, Mysql, CSS3, HTML5, Framework Tailwind, Motor de plantillas HandleBards, Testing con jest."
             },
-            "p_5" : {
+            "p_6" : {
                 "data" : "App desktop, GUI que cuenta con un analizador lexico y sintactico y una seccion donde podemos ingresar consultas sql, luego de ejecutar el sistema nos devolvera el analisis del analizador lexico y sintactico con un mansaje de validacion de nuestra consulta.",
                 "tecnologias" : "Tecnologias utilizadas Java, IDE NetBeans, Librerias java-cup.jar, java-cup-11a.jar, Jflex.jar."
             },
-            "p_6" : {
+            "p_7" : {
                 "data" : "App desktop, consiste en la administracion de una empresa que cuenta con Empleados, Usuarios, Oficinas, Productos, Pedidos, Pagos, Clientes, Linea de productos, Detalles de pedidos.",
                 "tecnologias" : "Tecnologias utilizadas Java, IDE NetBeans 8.2, MySql, Librerias mysql-connector-java-8.0.21.jar, jcalendar-1.3.2.jar, swingx-1.6.2.jar, NefAnimation_V2.1_jdk17.jar."
             },
-            "p_7" : {
+            "p_8" : {
                 "data" : "App, consiste en un juego donde tenemos 7 leds, al iniciar los leds comienzan en color azul al llegar al extremo de la tira led espera 1seg a que el jugador presione el boton para continuar, en caso de pasado el tiempo sin presionar el boton, el juego nos muestra una led de color rojo y vuelve a iniciar el juego.",
                 "tecnologias" : "Tecnologias utilizadas Arduino, Tinkercat."
             },
-            "p_8" : {
+            "p_9" : {
                 "data" : "Consiste en dos Aplicaciones que realizan un analisis lexico de 2 formas distintas, una es usando matrizes y la otra es usando codigo logico.",
                 "tecnologias" : "Tecnologias utilizadas C, C++."
             },
-            "p_9" : {
+            "p_10" : {
                 "data" : "App desktop, consiste en la administracion de una editorial de libros, que ademas implementa la validacion y uso de ISBNS.",
                 "tecnologias" : "Tecnologias utilizadas C, C++."
             }

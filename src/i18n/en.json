@@ -51,34 +51,38 @@
                 "tecnologias" : "Technologies used React, JavaScript, HTML5, CSS3."
             },
             "p_2" : {
+                "data" : "Web app called Comidas lo mejor focused on the online sale of food dishes.",
+                "tecnologias" : "Technologies used React, Framework Next.js, JavaScript, CSS3, HTML5."
+            },
+            "p_3" : {
                 "data" : "Web app where you can manage images in the Pinterest style.",
                 "tecnologias" : "Technologies used JavaScript, Express.js Framework, MongoDB, EJS Template Engine, Bootstrap Framework, CSS3, HTML5."
             },
-            "p_3" : {
+            "p_4" : {
                 "data" : "User administration web app, with security to avoid attacks like XSS, CSRF, SQL INJECTION, CODE INJECTION, BRUTE FORCE ROBOTS also includes SSL and .htaccess file.",
                 "tecnologias" : "Technologies used PHP PDO implementation, Bootstrap Framework, HTML5, CSS3, DB MySql, DB deploy with Clever cloud."
             },
-            "p_4" : {
+            "p_5" : {
                 "data" : "Web app, shoe factory with production lines and production orders with model and color, these are supervised by 2 operators, who carry out the quality control of the shoes.",
                 "tecnologias" : "Technologies used JavaScript, TypeScript, Express.js Framework, Mysql, CSS3, HTML5, Tailwind Framework, HandleBards template engine, Testing with jest."
             },
-            "p_5" : {
+            "p_6" : {
                 "data" : "Desktop app, GUI that has a lexical and syntactic analyzer and a section where we can enter sql queries, after executing the system it will return the analysis of the lexical and syntactic analyzer with a message validating our query.",
                 "tecnologias" : "Technologies used Java, IDE NetBeans, Libraries java-cup.jar, java-cup-11a.jar, Jflex.jar."
             },
-            "p_6" : {
+            "p_7" : {
                 "data" : "App desktop, consists of the administration of a company that has Employees, Users, Offices, Products, Orders, Payments, Customers, Product Line, Order Details.",
                 "tecnologias" : "Technologies used Java, IDE NetBeans 8.2, MySql, Libraries mysql-connector-java-8.0.21.jar, jcalendar-1.3.2.jar, swingx-1.6.2.jar, NefAnimation_V2.1_jdk17.jar."
             },
-            "p_7" : {
+            "p_8" : {
                 "data" : "App, consists of a game where we have 7 leds, when starting the leds they start in blue when they reach the end of the led strip, wait 1 sec for the player to press the button to continue, if the time has elapsed without pressing the button, the game shows us a red led and starts the game again.",
                 "tecnologias" : "Technologies used Arduino, Tinkercad."
             },
-            "p_8" : {
+            "p_9" : {
                 "data" : "It consists of two Applications that perform a lexical analysis in 2 different ways, one is using arrays and the other is using logical code.",
                 "tecnologias" : "Technologies used C, C++."
             },
-            "p_9" : {
+            "p_10" : {
                 "data" : "App desktop, consists of the administration of a book publisher, which also implements the validation and use of ISBNS.",
                 "tecnologias" : "Technologies used C, C++."
             }
