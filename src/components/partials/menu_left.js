@@ -22,7 +22,7 @@ export default function ComponentMenuLeft({inicio,sobre_mi,services,portfolio,ed
             const {y : portfolio_y} = portfolio.current.getBoundingClientRect();
             const {y : educacion_y} = educacion.current.getBoundingClientRect();
             const {y : contactar_y} = contactar.current.getBoundingClientRect();
-            
+
             setIcon_selected( 
                 (inicio_y<=0 && inicio_y>=-450)? "inicio" : 
                 (sobre_mi_y<=250 && sobre_mi_y>=-600)? "sobre-mi" :

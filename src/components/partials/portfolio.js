@@ -7,11 +7,35 @@ export default forwardRef(function ComponentPortfolio(props,ref){
     const {t} = useTranslation();
     
     const [name_button,setName_button] = useState("button_view.txt_1");
+    const [start_increase,setStart_increase] = useState(false);
     const proyects = useRef();
+    const number_increase = useRef();
 
     const view_proyects = () => {
         setName_button( (proyects.current.style.height == 'auto')? 'button_view.txt_1' : 'button_view.txt_2' );
         proyects.current.style.height = (proyects.current.style.height == 'auto')? "475px" : "auto";
+    }
+
+    const start_count_increase = (span) => {
+        let max = span.ariaValueMax;
+        let count = setInterval(() => {
+            span.textContent++;
+            if(span.textContent == max){
+                clearInterval(count);
+            }
+        }, 100);
+    }
+    window.onscroll = () => {
+        if(window.scrollY >= number_increase.current.offsetTop){
+            if(!start_increase){
+                number_increase.current.querySelectorAll('span').forEach((span,index) => {
+                    if(index%2==0){
+                        start_count_increase(span);
+                    }
+                })
+            }
+            setStart_increase(true);
+        }
     }
 
     return (
@@ -209,11 +233,11 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                     </Link>
                 </div>
             </article>
-            <article className={style.data}>
+            <article className={style.data} ref={number_increase}>
                 <div className={style.item} data-aos="fade-down" data-aos-duration="3000">
                     <ion-icon name="checkmark-circle-outline"></ion-icon>
                     <p>
-                        <span>50+</span>
+                        <span aria-valuemax={70}>0</span>
                         <span>
                             { t('portfolio.additional.txt_1') }
                         </span>
@@ -222,7 +246,7 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                 <div className={style.item} data-aos="fade-down" data-aos-duration="2500">
                     <ion-icon name="happy-outline"></ion-icon>
                     <p>
-                        <span>43</span>
+                        <span aria-valuemax={50}>0</span>
                         <span>
                             { t('portfolio.additional.txt_2') }
                         </span>
@@ -231,7 +255,7 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                 <div className={style.item} data-aos="fade-down" data-aos-duration="2000">
                     <ion-icon name="flash-outline"></ion-icon>
                     <p>
-                        <span>4</span>
+                        <span aria-valuemax={15}>0</span>
                         <span>
                             { t('portfolio.additional.txt_3') }
                         </span>
@@ -240,7 +264,7 @@ export default forwardRef(function ComponentPortfolio(props,ref){
                 <div className={style.item} data-aos="fade-down" data-aos-duration="1500">
                     <ion-icon name="body-outline"></ion-icon>
                     <p>
-                        <span>4</span>
+                        <span aria-valuemax={4}>0</span>
                         <span>
                             { t('portfolio.additional.txt_4') }
                         </span>
